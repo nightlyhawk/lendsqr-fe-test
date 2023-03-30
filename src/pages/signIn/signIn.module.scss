@@ -1,22 +1,33 @@
-$primary_color: #E5E5E5;
+@import '../../assets/variables';
 $top_width: 35%;
 
 
 
-div
+.signin
 {
     display: flex;
     flex-direction: row;
     background-color: $primary_color;
     margin: auto;
     
-    div
+    .left-container
     {
         background: url(../../assets/signInbg.png);
         width: $top_width;
     }
-    div
+    .right-container
     {
+        input
+        {
+            width: 80%;
+            border: none;
+            border: 1px solid $primary_color;
+            border-radius: $base-border-radius;
+        }
+        button
+        {
+            width: 80%;
+        }
         width: $top_width;
     }
 }

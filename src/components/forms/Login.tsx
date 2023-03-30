@@ -26,8 +26,8 @@ export const Login = () => {
     }
     return (
         <form>
-            <input type="email" name="email" id="" value={loginInfo.email} onChange={(event) =>handleChange} required />
-            <input type="password" name="password" id="" value={loginInfo.password} onChange={(event) =>handleChange} required />
+            <input type="email" name="email" value={loginInfo.email} onChange={(event) =>handleChange} required />
+            <input type="password" name="password" value={loginInfo.password} onChange={(event) =>handleChange} required />
             <Button variant='btn-tertiary' type='submit' event={logic} >Login</Button>
         </form>
     )

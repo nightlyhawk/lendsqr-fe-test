@@ -2,7 +2,7 @@
 type ButtonProps<T> = {
     variant: string
     type: "button" | "reset" | "submit" | undefined 
-    event: React.MouseEventHandler<T> | undefined;
+    event?: React.MouseEventHandler<T> | undefined;
     children: React.ReactNode
 }
     

@@ -13,7 +13,7 @@ type TotalsProps = {
 
 export const Totals = ({alt, label, count, ...src}:TotalsProps) => {
     return (
-        <div>
+        <div className="totals">
             <img {...src} alt=""/>
             <p>{label}</p>
             <p>{count}</p>

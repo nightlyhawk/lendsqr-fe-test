@@ -1,0 +1,11 @@
+@import './variables';
+
+.totals
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 15%;
+    text-align: left;
+    background-color: $primary-color;
+}

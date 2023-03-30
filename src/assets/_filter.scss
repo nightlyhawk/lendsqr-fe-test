@@ -1,0 +1,22 @@
+
+
+
+.filter-on
+{
+ display: flex;
+ flex-direction: column;
+ z-index: 1;
+ form 
+ {
+    flex-direction: column;
+ }
+ div 
+ {
+    flex-direction: row;
+ }
+}
+
+.filter-off
+{
+ display: none;
+}

@@ -1,0 +1,42 @@
+@mixin btn($col) {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: $base-padding $base-padding * 2;
+    border-radius: $base-border-radius;
+    background-color: $col;
+}
+
+// @function setSize($h, $w){
+//     $size: (
+//         height: $h,
+//         width: $w
+//     );
+//     @return $size;
+// }; primary: #E5E5E5, btn-color1: #39CDCC, secondary: #545F7D, btn-color2: #E4033B,
+// gold: #E9B200, green: #39CD62
+
+
+@each $property, $map in $size { 
+    .text-#{$property} {
+    height: map-get($map, "height");
+    width: map-get($map, "width");
+}
+}
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        @include btn($val);
+        &:hover {
+            background-color: lighten($val, 5);
+        }
+    }
+    .btn-outlined-#{key} {
+        @include btn(transparent);
+        border: $base-border-thickness solid $val;
+        &:hover {
+            background-color: $val;
+        }
+    }
+}

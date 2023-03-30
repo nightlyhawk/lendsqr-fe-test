@@ -1,0 +1,53 @@
+// theme colors
+$primary: #E5E5E5;
+$secondary: #545F7D;
+$tertiary: #39CDCC;
+$active:#39CD62;
+$error: #E4033B;
+$pending: #E9B200;
+
+
+
+//button sizes
+$btn_height_xs: 30px;
+$btn_height_md: 40px;
+$btn_width_xs: 30px;
+$btn_width_lng: 100%;
+
+// sizes map
+$size: (
+    "sm": (
+        "height": $btn_height_xs
+        "width": $btn_width_xs
+    )
+    "lng": setSize(40px, 100%)
+);
+
+
+// color palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,  
+    "active": $active,
+    "error": $error,
+    "pending": $pending, 
+);
+
+
+// borders
+$base-border-radius: 3px;
+$base-border-thickness: 1px;
+
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;

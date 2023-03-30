@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  flex-direction: row;
+  background-color: #E5E5E5;
+  margin: auto;
+}
+div div {
+  background: url(../Assets/pablo-sign-in\ 1.png);
+  width: 35%;
+}
+div div {
+  width: 35%;
+}/*# sourceMappingURL=signIn.module.css.map */

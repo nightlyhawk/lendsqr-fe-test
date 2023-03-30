@@ -1,0 +1,20 @@
+div
+{
+    display: flex;
+    width: 20%;
+    text-align: left;
+    background-color: $primary-color;
+    list-style: none;
+    ul
+    {
+      flex-direction: column;
+    }
+}
+
+
+    @if(li){
+        &:hover
+        {
+            background-color: lighten($tertiary-color, 2)
+        }
+    }

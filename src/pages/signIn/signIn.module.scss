@@ -1,0 +1,22 @@
+$primary_color: #E5E5E5;
+$top_width: 35%;
+
+
+
+div
+{
+    display: flex;
+    flex-direction: row;
+    background-color: $primary_color;
+    margin: auto;
+    
+    div
+    {
+        background: url(../../assets/signInbg.png);
+        width: $top_width;
+    }
+    div
+    {
+        width: $top_width;
+    }
+}

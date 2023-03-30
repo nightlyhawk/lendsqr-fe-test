@@ -1,0 +1,15 @@
+.overlay-on
+{
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg_color;
+}
+
+.overlay-off
+{
+    display: none;
+}

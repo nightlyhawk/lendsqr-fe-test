@@ -1,6 +1,6 @@
 type TotalsProps = {
-    src: string | undefined | React.FC<React.SVGProps<SVGSVGElement>>
-    alt?: string | undefined
+    src: any
+    alt?: string 
     label: string
     count: number
 }

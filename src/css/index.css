@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
 }
 
 code {
@@ -277,20 +278,22 @@ li:hover {
 .signin {
   display: flex;
   flex-direction: row;
-  background-color: #E5E5E5;
+  height: 100vh;
 }
 .signin img {
-  float: left;
+  position: absolute;
+  top: 10%;
+  left: 3%;
 }
 .signin .left-container {
   background: url(../assets/signInbg.png);
   width: 35%;
-  height: 337.57px;
+  height: 337.57;
   margin: auto;
 }
 .signin .right-container {
   width: 35%;
-  height: 337.57px;
+  height: 473.57;
   margin: auto;
   padding: 6px 17px;
 }
@@ -298,9 +301,12 @@ li:hover {
   width: 80%;
   border: none;
   border: 1px solid #E5E5E5;
-  height: 30px;
-  margin-bottom: 12px;
+  height: 42px;
+  margin-bottom: 23px;
   border-radius: 3px;
+}
+.signin .right-container p {
+  margin-bottom: 23px;
 }
 .signin .right-container button {
   width: 80%;

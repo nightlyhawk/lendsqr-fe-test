@@ -9,8 +9,8 @@ export const SignIn = () => {
                 
             </div>
             <div className='right-container'>
-                <h1 className="text-tertiary">Welcome!</h1>
-                <h4 className="text-tertiary">Enter details to login</h4>
+                <h1 className="text-primary">Welcome!</h1>
+                <p className="text-primary">Enter details to login</p>
                 <Login />
             </div>
         </div>

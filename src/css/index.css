@@ -22,7 +22,7 @@ code {
   background-color: #f2f2f2;
 }
 
-.btn-outlined-key {
+.btn-outlined-primary {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -32,7 +32,7 @@ code {
   background-color: transparent;
   border: 1px solid #E5E5E5;
 }
-.btn-outlined-key:hover {
+.btn-outlined-primary:hover {
   background-color: #E5E5E5;
 }
 
@@ -49,7 +49,7 @@ code {
   background-color: #5e6b8c;
 }
 
-.btn-outlined-key {
+.btn-outlined-secondary {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -59,7 +59,7 @@ code {
   background-color: transparent;
   border: 1px solid #545F7D;
 }
-.btn-outlined-key:hover {
+.btn-outlined-secondary:hover {
   background-color: #545F7D;
 }
 
@@ -76,7 +76,7 @@ code {
   background-color: #4dd2d1;
 }
 
-.btn-outlined-key {
+.btn-outlined-tertiary {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -86,7 +86,7 @@ code {
   background-color: transparent;
   border: 1px solid #39CDCC;
 }
-.btn-outlined-key:hover {
+.btn-outlined-tertiary:hover {
   background-color: #39CDCC;
 }
 
@@ -103,7 +103,7 @@ code {
   background-color: #4dd272;
 }
 
-.btn-outlined-key {
+.btn-outlined-active {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -113,7 +113,7 @@ code {
   background-color: transparent;
   border: 1px solid #39CD62;
 }
-.btn-outlined-key:hover {
+.btn-outlined-active:hover {
   background-color: #39CD62;
 }
 
@@ -130,7 +130,7 @@ code {
   background-color: #fc0542;
 }
 
-.btn-outlined-key {
+.btn-outlined-error {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -140,7 +140,7 @@ code {
   background-color: transparent;
   border: 1px solid #E4033B;
 }
-.btn-outlined-key:hover {
+.btn-outlined-error:hover {
   background-color: #E4033B;
 }
 
@@ -157,7 +157,7 @@ code {
   background-color: #ffc404;
 }
 
-.btn-outlined-key {
+.btn-outlined-pending {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -167,7 +167,7 @@ code {
   background-color: transparent;
   border: 1px solid #E9B200;
 }
-.btn-outlined-key:hover {
+.btn-outlined-pending:hover {
   background-color: #E9B200;
 }
 

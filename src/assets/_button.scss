@@ -32,7 +32,7 @@
             background-color: lighten($val, 5);
         }
     }
-    .btn-outlined-#{key} {
+    .btn-outlined-#{$key} {
         @include btn(transparent);
         border: $base-border-thickness solid $val;
         &:hover {

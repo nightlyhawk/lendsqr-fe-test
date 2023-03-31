@@ -17,8 +17,8 @@ $btn_width_lng: 100%;
 // sizes map
 $size: (
     "sm": (
-        "height": $btn_height_xs
-        "width": $btn_width_xs
+        "height": $btn_height_xs,
+        "width": $btn_width_xs,
     )
     "lng": setSize(40px, 100%)
 );

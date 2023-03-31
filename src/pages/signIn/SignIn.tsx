@@ -1,5 +1,4 @@
 import { Login } from "../../components/forms/Login";
-import './signIn.module.scss';
 import logo from '../../assets/logo.svg';
 
 export const SignIn = () => {

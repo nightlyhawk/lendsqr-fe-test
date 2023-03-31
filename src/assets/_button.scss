@@ -19,7 +19,7 @@
 
 
 @each $property, $map in $size { 
-    .text-#{$property} {
+    .btn-#{$property} {
     height: map-get($map, "height");
     width: map-get($map, "width");
 }

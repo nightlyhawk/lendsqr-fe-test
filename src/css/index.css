@@ -278,25 +278,28 @@ li:hover {
   display: flex;
   flex-direction: row;
   background-color: #E5E5E5;
-  margin: auto;
+}
+.signin img {
+  float: left;
 }
 .signin .left-container {
   background: url(../assets/signInbg.png);
-  background: no-repeat;
-  height: 337.57px;
   width: 35%;
-}
-.signin .left-container img {
-  float: left;
+  height: 337.57px;
+  margin: auto;
 }
 .signin .right-container {
   width: 35%;
   height: 337.57px;
+  margin: auto;
+  padding: 6px 17px;
 }
 .signin .right-container input {
   width: 80%;
   border: none;
   border: 1px solid #E5E5E5;
+  height: 30px;
+  margin-bottom: 12px;
   border-radius: 3px;
 }
 .signin .right-container button {

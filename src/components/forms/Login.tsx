@@ -14,9 +14,14 @@ export const Login = () => {
     const[error, setError] = useState("")
     const navigate = useNavigate();
     function logic() {
+        event?.preventDefault()
         if ( loginInfo.email! == "lendrsqr@gmail.com" && loginInfo.password! === "lendersquare"){
             setError("email or password incorrect")
-        } else {navigate('/users')};
+        } else {
+            setLoginInfo(  {   email: "",
+            password: ""
+        })
+            navigate('/users')};
     }
     const handleChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const target = event.target as HTMLInputElement;

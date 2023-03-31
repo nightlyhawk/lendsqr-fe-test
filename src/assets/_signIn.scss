@@ -22,7 +22,7 @@ $top_width: 35%;
     .left-container
     {
         background: url(../assets/signInbg.png);
-       @include container(337.57)
+       @include container(337.57px)
     }
     .right-container
     {
@@ -44,7 +44,7 @@ $top_width: 35%;
             width: 80%;
         }
 
-        @include container(473.57);
+        @include container(473.57px);
         padding: 6px 17px;
     }
 }

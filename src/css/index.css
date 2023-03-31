@@ -288,12 +288,12 @@ li:hover {
 .signin .left-container {
   background: url(../assets/signInbg.png);
   width: 35%;
-  height: 337.57;
+  height: 337.57px;
   margin: auto;
 }
 .signin .right-container {
   width: 35%;
-  height: 473.57;
+  height: 473.57px;
   margin: auto;
   padding: 6px 17px;
 }

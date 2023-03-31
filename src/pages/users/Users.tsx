@@ -52,10 +52,12 @@ export const Users = () => {
     return (
         <div className="text-secondary">
             <h1>Users</h1>
+            <div>
             <Totals src={userN} label='USERS' count={value.users}></Totals>
             <Totals src={active} label='ACTIVE USERS' count={value.users}></Totals>
             <Totals src={loans} label='USERS WITH LOANS' count={value.loans}></Totals>
             <Totals src={savings} label='USERS WITH SAVINGS' count={value.save}></Totals>
+            </div>
             <table>
                 <tr>
                     <th>ORGANIZATION <img src={filter} alt="filter" onClick={handle1}/></th>

@@ -19,7 +19,7 @@ export const Login = () => {
             setError("email or password incorrect")
         }
         else {
-            setLoginInfo(  {   email: "",
+            setLoginInfo({ email: "",
             password: ""
         })
             navigate('/users')};

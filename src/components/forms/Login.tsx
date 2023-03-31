@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { Button } from '../button/Button';
 import { useNavigate } from "react-router-dom";
 
-type EventProps = {
-    event: React.FormEvent<HTMLInputElement>
-}
+
 
 export const Login = () => {
 
@@ -20,17 +18,17 @@ export const Login = () => {
             setError("email or password incorrect")
         } else {navigate('/users')};
     }
-    const handleChange = ({event}: EventProps) => {
+    const handleChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const target = event.target as HTMLInputElement;
         setLoginInfo({
             ...loginInfo, [target.name]: target.value
-        })
+        });
     }
     return (
         <form onSubmit={logic}>
         {error && <div className='text-error' >{error}</div>}
-            <input type="email" name="email" value={loginInfo.email} placeholder="Email" onChange={(event) =>handleChange} required />
-            <input type="password" name="password" value={loginInfo.password} placeholder="password" onChange={(event) =>handleChange} required />
+            <input type="email" name="email" value={loginInfo.email} placeholder="Email" onChange={handleChange} required />
+            <input type="password" name="password" value={loginInfo.password} placeholder="Password" onChange={handleChange} required />
             <p className='text-tertiary' >FORGOT PASSWORD</p>
             <Button variant='btn-tertiary text-white'  type='submit' >LOG IN</Button>
         </form>

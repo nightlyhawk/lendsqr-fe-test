@@ -1,5 +1,9 @@
 $top_width: 35%;
-
+@mixin container {
+    width: $top_width;
+    height: 337.57px;
+    margin: auto;
+}
 
 
 .signin
@@ -7,18 +11,16 @@ $top_width: 35%;
     display: flex;
     flex-direction: row;
     background-color: $primary;
-    margin: auto;
     
+    img
+    {
+        float: left;
+    }
+
     .left-container
     {
         background: url(../assets/signInbg.png);
-        background: no-repeat;
-        height: 337.57px;
-        width: $top_width;
-        img
-        {
-            float: left;
-        }
+       @include container()
     }
     .right-container
     {
@@ -27,14 +29,17 @@ $top_width: 35%;
             width: 80%;
             border: none;
             border: 1px solid $primary;
+            height: 30px;
+            margin-bottom: 12px;
             border-radius: $base-border-radius;
         }
         button
         {
             width: 80%;
         }
-        width: $top_width;
-        height: 337.57px;
+
+        @include container();
+        padding: 6px 17px;
     }
 }
 

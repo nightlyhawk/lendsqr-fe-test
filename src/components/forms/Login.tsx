@@ -13,8 +13,8 @@ export const Login = () => {
     )
     const[error, setError] = useState("")
     const navigate = useNavigate();
-    function logic() {
-        event?.preventDefault()
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
         if ( loginInfo.email! == "lendrsqr@gmail.com" && loginInfo.password! === "lendersquare"){
             setError("email or password incorrect")
         } else {
@@ -30,7 +30,7 @@ export const Login = () => {
         });
     }
     return (
-        <form onSubmit={logic}>
+        <form onSubmit={handleSubmit}>
         {error && <div className='text-error' >{error}</div>}
             <input type="email" name="email" value={loginInfo.email} placeholder="Email" onChange={handleChange} required />
             <input type="password" name="password" value={loginInfo.password} placeholder="Password" onChange={handleChange} required />

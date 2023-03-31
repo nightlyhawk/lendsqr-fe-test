@@ -171,11 +171,52 @@ code {
   background-color: #E9B200;
 }
 
+.btn-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  background-color: white;
+}
+.btn-white:hover {
+  background-color: white;
+}
+
+.btn-outlined-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.btn-outlined-white:hover {
+  background-color: white;
+}
+
 nav {
   height: 50px;
   padding: 0;
   margin: 0;
   position: absolute;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  flex-direction: row;
+  float: right;
 }
 
 .totals {
@@ -184,6 +225,7 @@ nav {
   height: auto;
   width: 15%;
   text-align: left;
+  color: #545F7D;
   background-color: #E5E5E5;
 }
 
@@ -240,6 +282,8 @@ li:hover {
 }
 .signin .left-container {
   background: url(../assets/signInbg.png);
+  background: no-repeat;
+  height: 337.57px;
   width: 35%;
 }
 .signin .left-container img {
@@ -247,6 +291,7 @@ li:hover {
 }
 .signin .right-container {
   width: 35%;
+  height: 337.57px;
 }
 .signin .right-container input {
   width: 80%;
@@ -256,4 +301,32 @@ li:hover {
 }
 .signin .right-container button {
   width: 80%;
+}
+
+.text-primary {
+  color: #E5E5E5;
+}
+
+.text-secondary {
+  color: #545F7D;
+}
+
+.text-tertiary {
+  color: #39CDCC;
+}
+
+.text-active {
+  color: #39CD62;
+}
+
+.text-error {
+  color: #E4033B;
+}
+
+.text-pending {
+  color: #E9B200;
+}
+
+.text-white {
+  color: white;
 }

@@ -15,7 +15,7 @@ export const Login = () => {
     const navigate = useNavigate();
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-      if ( loginInfo.email! === "lendrsqr@gmail.com" && loginInfo.password! === "lendersquare"){
+      if ( loginInfo.email !== "lendrsqr@gmail.com" && loginInfo.password !== "lendersquare"){
             setError("email or password incorrect")
         }
         else {

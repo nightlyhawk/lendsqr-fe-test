@@ -31,13 +31,13 @@ $top_width: 35%;
             width: 80%;
             border: none;
             border: 1px solid $primary;
-            height: 42px;
-            margin-bottom: 23px;
+            height: $btn_height_md;
+            margin-bottom: $base-margin-bottom;
             border-radius: $base-border-radius;
         }
         p
         {
-            margin-bottom: 23px;
+            margin-bottom: $base-margin-bottom;
         }
         button
         {

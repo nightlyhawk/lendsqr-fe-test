@@ -44,10 +44,10 @@ code {
   border: 0;
   padding: 0.75rem 1.5rem;
   border-radius: 3px;
-  background-color: #545F7D;
+  background-color: #213F7D;
 }
 .btn-secondary:hover {
-  background-color: #5e6b8c;
+  background-color: #264991;
 }
 
 .btn-outlined-secondary {
@@ -58,10 +58,10 @@ code {
   padding: 0.75rem 1.5rem;
   border-radius: 3px;
   background-color: transparent;
-  border: 1px solid #545F7D;
+  border: 1px solid #213F7D;
 }
 .btn-outlined-secondary:hover {
-  background-color: #545F7D;
+  background-color: #213F7D;
 }
 
 .btn-tertiary {
@@ -226,7 +226,7 @@ nav ul {
   height: auto;
   width: 15%;
   text-align: left;
-  color: #545F7D;
+  color: #213F7D;
   background-color: #E5E5E5;
 }
 
@@ -302,11 +302,11 @@ li:hover {
   border: none;
   border: 1px solid #E5E5E5;
   height: 42px;
-  margin-bottom: 23px;
+  margin-bottom: 24.5px;
   border-radius: 3px;
 }
 .signin .right-container p {
-  margin-bottom: 23px;
+  margin-bottom: 24.5px;
 }
 .signin .right-container button {
   width: 80%;
@@ -317,7 +317,7 @@ li:hover {
 }
 
 .text-secondary {
-  color: #545F7D;
+  color: #213F7D;
 }
 
 .text-tertiary {

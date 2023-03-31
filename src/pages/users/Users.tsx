@@ -50,7 +50,7 @@ export const Users = () => {
 
 
     return (
-        <div>
+        <div className="text-secondary">
             <h1>Users</h1>
             <Totals src={userN} label='USERS' count={value.users}></Totals>
             <Totals src={active} label='ACTIVE USERS' count={value.users}></Totals>

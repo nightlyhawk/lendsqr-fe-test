@@ -9,7 +9,7 @@ export const Nav = () => {
     return (
         <nav>
             <ul>
-                <li>
+                <li className='nav-left'>
                     <img src={logo} alt='logo' />
                 </li>
                 <li>
@@ -18,12 +18,14 @@ export const Nav = () => {
                     <FontAwesomeIcon icon={icon({name: 'magnifying-glass', style: 'solid'})} />
                     </Button>
                 </li>
+                <ul className='nav-right'>
                 <li>Docs</li>
                 <li><FontAwesomeIcon icon={icon({name: 'bell', style: 'solid'})} /></li>
                 <li><img src={profile} alt='profile' />
                 <FontAwesomeIcon icon={icon({name: 'caret-down', style: 'solid'})} />
                 <p>Adedeji</p>
                 </li>
+                </ul>
             </ul>
         </nav>
     )

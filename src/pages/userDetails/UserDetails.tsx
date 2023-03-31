@@ -21,11 +21,11 @@ export const UserDetail = () => {
         `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`
     );
     return (
-        <div>
+        <div className="text-secondary">
             <Link to='/users'>Back to Users</Link>
             <h1>User Details</h1>
-            <Button variant='btn-outline-error' type="button" >BLACKLIST USER</Button>
-            <Button variant="btn-outline-active" type="button" >ACTIVATE USER</Button>
+            <Button variant='btn-outline-error text-error' type="button" >BLACKLIST USER</Button>
+            <Button variant="btn-outline-active text-active" type="button" >ACTIVATE USER</Button>
             <div>
                 {error && <div>{ error }</div>}
                 {loading && <div>loading...</div>}

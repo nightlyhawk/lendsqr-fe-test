@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b872b7e.css",
+    "main.js": "/static/js/main.1ad27bde.js",
+    "static/media/signInbg.png": "/static/media/signInbg.dc21b2aaf294b216383d.png",
+    "static/media/users-save.svg": "/static/media/users-save.9a23fc8185c745bce14bbd0b578d1627.svg",
+    "static/media/clipboard-list.svg": "/static/media/clipboard-list.a22688a47b203284703b7993f5cc77c5.svg",
+    "static/media/users.svg": "/static/media/users.b72fa4c107f5cb851d7bc5a687f08385.svg",
+    "static/media/Loansbag.svg": "/static/media/Loansbag.98809ca327dbd85094cf542e592e3aa2.svg",
+    "static/media/badge-percent.svg": "/static/media/badge-percent.e1d2c2472ae5dda9f95aea53642c023d.svg",
+    "static/media/savings.svg": "/static/media/savings.0104bc7414969091dbca1634e334cdff.svg",
+    "static/media/user-cog.svg": "/static/media/user-cog.de90eaa7f6c70149bf50aa60fda8e200.svg",
+    "static/media/logo.svg": "/static/media/logo.7370afa69c4cab86ef17947d4753c806.svg",
+    "static/media/piggy-bank.svg": "/static/media/piggy-bank.7de6c6ebca3ce7117ea8982d16786bee.svg",
+    "static/media/galaxy.svg": "/static/media/galaxy.a22771a9269c470f59d58b3ef19a2d85.svg",
+    "static/media/active-users.svg": "/static/media/active-users.68303aa5427de7e41dd5d2d9aa827006.svg",
+    "static/media/user-times.svg": "/static/media/user-times.c7dc967a41aaf11578dd028c00d7cad3.svg",
+    "static/media/loan.svg": "/static/media/loan.32cde35cca2ddf807a9223899f6dc569.svg",
+    "static/media/req.svg": "/static/media/req.3e0fdc9027e85b6031ba9472f44989e1.svg",
+    "static/media/sliders.svg": "/static/media/sliders.1329eca70f4ad390522246b1f0e356a7.svg",
+    "static/media/home.svg": "/static/media/home.9a64396240ee00f28850af61a24ce952.svg",
+    "static/media/user-check.svg": "/static/media/user-check.a012537dc851a1e57c42c6bbd8e350a8.svg",
+    "static/media/user-friends.svg": "/static/media/user-friends.e2bfc68e87b1859e68588237b558e391.svg",
+    "static/media/users-loans.svg": "/static/media/users-loans.54adc682002b2a3c9e86016e83ade933.svg",
+    "static/media/scroll.svg": "/static/media/scroll.1f23c7cd7d978845c2108da85324fbd8.svg",
+    "static/media/view.svg": "/static/media/view.6c531969b6b35e84fed3e3858797bdce.svg",
+    "static/media/icontransact.svg": "/static/media/icontransact.36dbf45c45e681b6fb9d47aac91401f3.svg",
+    "static/media/menu.svg": "/static/media/menu.84a1a65f6151dfe8a602c879aaa9534f.svg",
+    "index.html": "/index.html",
+    "static/media/briefcase.svg": "/static/media/briefcase.b1c65162900b024b33abcaaa75742485.svg",
+    "static/media/filter.svg": "/static/media/filter.c7688a6d836e7955608e66554be1c0a3.svg",
+    "main.5b872b7e.css.map": "/static/css/main.5b872b7e.css.map",
+    "main.1ad27bde.js.map": "/static/js/main.1ad27bde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b872b7e.css",
+    "static/js/main.1ad27bde.js"
+  ]
+}

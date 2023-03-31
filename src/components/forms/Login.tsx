@@ -3,14 +3,15 @@ import { Button } from '../button/Button';
 import { useNavigate } from "react-router-dom";
 
 type EventProps = {
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.FormEvent<HTMLInputElement>
 }
 
 export const Login = () => {
 
     const [loginInfo, setLoginInfo] = useState(
-        {email: "",
-        password: ""}
+    {   email: "",
+        password: ""
+    }
     )
     const[error, setError] = useState("")
     const navigate = useNavigate();
@@ -20,15 +21,18 @@ export const Login = () => {
         } else {navigate('/users')};
     }
     const handleChange = ({event}: EventProps) => {
+        const target = event.target as HTMLInputElement;
         setLoginInfo({
-            ...loginInfo, [event.target.name]: event.target.value
+            ...loginInfo, [target.name]: target.value
         })
     }
     return (
-        <form>
-            <input type="email" name="email" value={loginInfo.email} onChange={(event) =>handleChange} required />
-            <input type="password" name="password" value={loginInfo.password} onChange={(event) =>handleChange} required />
-            <Button variant='btn-tertiary' type='submit' event={logic} >Login</Button>
+        <form onSubmit={logic}>
+        {error && <div className='text-error' >{error}</div>}
+            <input type="email" name="email" value={loginInfo.email} placeholder="Email" onChange={(event) =>handleChange} required />
+            <input type="password" name="password" value={loginInfo.password} placeholder="password" onChange={(event) =>handleChange} required />
+            <p className='text-tertiary' >FORGOT PASSWORD</p>
+            <Button variant='btn-tertiary text-white'  type='submit' >LOG IN</Button>
         </form>
     )
 }

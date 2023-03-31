@@ -8,6 +8,8 @@ export const SignIn = () => {
                 <img src={logo} alt="logo" />
             </div>
             <div className='right-container'>
+                <h1>Welcome!</h1>
+                <h4>Enter details to login</h4>
                 <Login />
             </div>
         </div>

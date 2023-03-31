@@ -239,7 +239,7 @@ li:hover {
   margin: auto;
 }
 .signin .left-container {
-  background: url(./assets/signInbg.png);
+  background: url(../assets/signInbg.png);
   width: 35%;
 }
 .signin .left-container img {

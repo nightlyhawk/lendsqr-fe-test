@@ -13,6 +13,10 @@ $top_width: 35%;
     {
         background: url(../../assets/signInbg.png);
         width: $top_width;
+        img
+        {
+            float: left;
+        }
     }
     .right-container
     {

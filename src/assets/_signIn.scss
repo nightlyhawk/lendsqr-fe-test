@@ -6,7 +6,7 @@ $top_width: 35%;
 {
     display: flex;
     flex-direction: row;
-    background-color: $primary_color;
+    background-color: $primary;
     margin: auto;
     
     .left-container
@@ -24,7 +24,7 @@ $top_width: 35%;
         {
             width: 80%;
             border: none;
-            border: 1px solid $primary_color;
+            border: 1px solid $primary;
             border-radius: $base-border-radius;
         }
         button

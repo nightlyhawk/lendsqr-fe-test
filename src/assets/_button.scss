@@ -18,12 +18,12 @@
 // gold: #E9B200, green: #39CD62
 
 
-@each $property, $map in $size { 
-    .btn-#{$property} {
-    height: map-get($map, "height");
-    width: map-get($map, "width");
-}
-}
+// @each $property, $map in $size { 
+//     .btn-#{$property} {
+//     height: map-get($map, "height");
+//     width: map-get($map, "width");
+// }
+// }
 
 @each $key, $val in $colors {
     .btn-#{$key} {

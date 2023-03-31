@@ -15,13 +15,16 @@ $btn_width_xs: 30px;
 $btn_width_lng: 100%;
 
 // sizes map
-$size: (
-    "sm": (
-        "height": $btn_height_xs,
-        "width": $btn_width_xs,
-    )
-    "lng": setSize(40px, 100%)
-);
+// $size: (
+//     "sm": (
+//         "height": $btn_height_xs,
+//         "width": $btn_width_xs,
+//     )
+//     "lg": (
+//         "height":$btn_height_md,
+//         "width": $btn_width_lng,
+//     )
+// );
 
 
 // color palette

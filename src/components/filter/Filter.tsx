@@ -25,10 +25,10 @@ export const Filter = <T extends {orgName: string}>({users, variant}: FilterProp
                 )
             })}
             </select>
-            <input type="text" name="" id="" />
-            <input type="email" name="" id="" />
-            <input type="date" name="" id="" />
-            <input type="number" name="" id="" />
+            <input type="text" name=""  />
+            <input type="email" name="" />
+            <input type="date" name="" />
+            <input type="number" name=""/>
             <select>
                 <option value="">Active</option>
                 <option value="">Inactive</option>

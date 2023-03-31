@@ -24,7 +24,7 @@ import scroll from './scroll.svg';
 
 export const DashBoard = () => {
     return(
-        <div>
+        <div className='dash'>
             <ul>
                 <div><img src={brief} alt="" />Switch Organization</div>
                 <li>

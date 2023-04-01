@@ -18,7 +18,7 @@ export const OverLay = ({id, variant}: IdProps) => {
     //}
     return (
         <div className={ `${variant}`}>
-            <Link to='/details' state={{id}}> <img src={view} alt="" /> View Details</Link>
+            <Link to='/users/details' state={{id}}> <img src={view} alt="" /> View Details</Link>
             <p><img src={ban} alt="" />Blacklist Users</p>
             <p><img src={check} alt="" />Activate Users</p>
         </div>

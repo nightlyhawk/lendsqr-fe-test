@@ -22,7 +22,7 @@ export const Login = () => {
             setLoginInfo({ email: "",
             password: ""
         })
-            navigate('/users')};
+            navigate('/users/list')};
     }
     const handleChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const target = event.target as HTMLInputElement;

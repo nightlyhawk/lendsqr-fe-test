@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import loans from './Loansbag.svg';
-import loanP from './loan.svg';
+import loanP from './loans.svg';
 import saving from './savings.svg';
 import trans from './icontransact.svg';
 import serve from './galaxy.svg';
@@ -25,42 +25,42 @@ import { NavLink } from 'react-router-dom';
 
 export const DashBoard = () => {
     return(
-        <div className='dash'>
-                <h2><img src={brief} alt="" />Switch Organization</h2>
+        <div className='dash text-secondary'>
+                <h2><img className='icon' src={brief} alt="" />Switch Organization</h2>
                 <h3>
-                <img src={home} alt="" />Dashboard
+                <img className='icon' src={home} alt="" />Dashboard
                 </h3>
                         <h3>CUSTOMER</h3>
-                            <ul>
-                                <NavLink to="list" ><img src={use} alt="" />Users</NavLink>
-                                <NavLink to="" ><img src={guarant} alt="" />Guarantors</NavLink>
-                                <NavLink to=""><img src={loans} alt="" /> Loans</NavLink>
+                        
+                                <NavLink to="list" ><img className='icon' src={use} alt="" />Users</NavLink>
+                                <NavLink to="" ><img className='icon' src={guarant} alt="" />Guarantors</NavLink>
+                                <NavLink to=""><img className='icon' src={loans} alt="" /> Loans</NavLink>
                                 <NavLink to="" ><FontAwesomeIcon icon={icon({name: "handshake", style: 'regular'})} />Decision Models</NavLink>
-                                <NavLink to="" ><img src={pig} alt="" />Savings</NavLink>
-                                <NavLink to="" ><img src={req} alt="" />Loan Request</NavLink>
-                                <NavLink to="" ><img src={useC} alt="" />List</NavLink>
-                                <NavLink to="" ><img src={karma} alt="" />Karma</NavLink>
-                            </ul>
+                                <NavLink to="" ><img className='icon' src={pig} alt="" />Savings</NavLink>
+                                <NavLink to="" ><img className='icon' src={req} alt="" />Loan Request</NavLink>
+                                <NavLink to="" ><img className='icon' src={useC} alt="" />List</NavLink>
+                                <NavLink to="" ><img className='icon' src={karma} alt="" />Karma</NavLink>
+                            
                         
                         <h3>BUISNESSES</h3>
-                        <ul>
-                                <NavLink to="" ><img src={brief} alt="" />Organization</NavLink>
-                                <NavLink to="" ><img src={loanP} alt="" />Loan Products</NavLink>
-                                <NavLink to=""><img src={saving} alt="" />Savings Products</NavLink>
+                    
+                                <NavLink to="" ><img className='icon' src={brief} alt="" />Organization</NavLink>
+                                <NavLink to="" ><img className='icon' src={loanP} alt="" />Loan Products</NavLink>
+                                <NavLink to=""><img className='icon' src={saving} alt="" />Savings Products</NavLink>
                                 <NavLink to="" ><FontAwesomeIcon icon={icon({name: "coins", style: 'solid'})} />Fees and Charges</NavLink>
-                                <NavLink to="" ><img src={trans} alt="" />Transactions</NavLink>
-                                <NavLink to="" ><img src={serve} alt="" />Services</NavLink>
-                                <NavLink to="" ><img src={servU} alt="" />Service Accounts</NavLink>
-                                <NavLink to="" ><img src={scroll} alt="" />Settlements</NavLink>
+                                <NavLink to="" ><img className='icon' src={trans} alt="" />Transactions</NavLink>
+                                <NavLink to="" ><img className='icon' src={serve} alt="" />Services</NavLink>
+                                <NavLink to="" ><img className='icon' src={servU} alt="" />Service Accounts</NavLink>
+                                <NavLink to="" ><img className='icon' src={scroll} alt="" />Settlements</NavLink>
                                 <NavLink to="" ><FontAwesomeIcon icon={icon({name: "chart-column", style: 'solid'})} />Reports</NavLink>
-                            </ul>
+                            
                         
                         <h3>SETTINGS</h3>
-                            <ul>
-                                <NavLink to="" ><img src={prev} alt="" />Preferences</NavLink>
-                                <NavLink to="" ><img src={fnp} alt="" />Fees and Pricing</NavLink>
-                                <NavLink to="" ><img src={log} alt="" />Audit Logs</NavLink>
-                            </ul>
+                        
+                                <NavLink to="" ><img className='icon' src={prev} alt="" />Preferences</NavLink>
+                                <NavLink to="" ><img className='icon' src={fnp} alt="" />Fees and Pricing</NavLink>
+                                <NavLink to="" ><img className='icon' src={log} alt="" />Audit Logs</NavLink>
+                            
         </div>
     )
 }

@@ -1,7 +1,7 @@
 nav
 {
   height: 50px;
-  padding: 0;
+  padding: 11px;
   max-width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -9,20 +9,46 @@ nav
   flex-direction: row;
   justify-content: end;
   list-style: none;
-}
-nav h1
+  gap: 44px;
+  h1
 {
   margin-right: auto;
 }
-nav ul
+}
+
+.search
 {
   margin: auto;
   width: 25%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: -11%;
 }
+.search :first-child
+{
+  width: 71%;
+  margin-right: 9px;
+}
+
+.search button 
+{
+  width: 100%;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.list-pad
+{
+  padding: 10px;
+}
+
 .circle
 {
   border-radius: $circle-border;
 }
+
 .input-hgt
 {
   width: 75%;

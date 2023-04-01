@@ -27,7 +27,7 @@ type user = {
 
 
 export const Users = () => {
-    const { data: users, error, loading } = useFetch(
+    const { data: users, loading, error } = useFetch(
         "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
     );
     const value = useCount(users);

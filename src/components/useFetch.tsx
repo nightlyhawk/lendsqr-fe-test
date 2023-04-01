@@ -13,8 +13,8 @@ export type UseFetchProps = {
 export const useFetch = (url: string): UseFetchProps => {
     const [status, setStatus] = useState<Number>(0);
     const [statusText, setStatusText] = useState<String>('');
-    const [data, setData] = useState<any>();
-    const [error, setError] = useState<any>();
+    const [data, setData] = useState<any>([]);
+    const [error, setError] = useState<any | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 
 
@@ -33,7 +33,7 @@ export const useFetch = (url: string): UseFetchProps => {
       };
       useEffect(() => {
         getAPIData();
-      }, [url, getAPIData()]);
+      }, [url]);
     
       return { status, statusText, data, error, loading };
     };

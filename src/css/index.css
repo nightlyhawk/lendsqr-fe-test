@@ -202,22 +202,31 @@ code {
 nav {
   height: 50px;
   padding: 0;
-  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
   position: absolute;
-}
-nav ul {
   display: flex;
   flex-direction: row;
+  justify-content: end;
   list-style: none;
 }
 
-.nav-left {
-  float: left;
+nav h1 {
+  margin-right: auto;
 }
 
-.nav-right {
-  flex-direction: row;
-  float: right;
+nav ul {
+  margin: auto;
+  width: 25%;
+}
+
+.circle {
+  border-radius: 999px;
+}
+
+.input-hgt {
+  width: 75%;
+  height: 42px;
 }
 
 .totals {
@@ -236,12 +245,13 @@ nav ul {
   text-align: left;
   background-color: #E5E5E5;
   list-style: none;
-}
-.dash ul {
   flex-direction: column;
 }
+.dash h3 {
+  margin-bottom: 40px;
+}
 
-li:hover {
+.active {
   background-color: #41cfce;
 }
 

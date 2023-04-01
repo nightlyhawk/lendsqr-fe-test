@@ -8,25 +8,24 @@ import profile from './profile.png'
 export const Nav = () => {
     return (
         <nav>
-            <ul>
-                <li className='nav-left'>
+                <h1>
                     <img src={logo} alt='logo' />
+                </h1>
+                <ul>
+                <li>
+                    <input type="text" name='search' placeholder='search' className='input-hgt' />
                 </li>
                 <li>
-                    <input type="text" />
-                    <Button variant='btn-tertiary' type='button'> 
+                <Button variant='btn-tertiary' type='button'> 
                     <FontAwesomeIcon icon={icon({name: 'magnifying-glass', style: 'solid'})} />
                     </Button>
-                </li>
-                <ul className='nav-right'>
-                <li>Docs</li>
+                </li>         
+                </ul>   
+                <li className='text-secondary' >Docs</li>
                 <li><FontAwesomeIcon icon={icon({name: 'bell', style: 'solid'})} /></li>
-                <li><img src={profile} alt='profile' />
-                <FontAwesomeIcon icon={icon({name: 'caret-down', style: 'solid'})} />
-                <p>Adedeji</p>
+                <li><img src={profile} alt='profile' className='circle' />
                 </li>
-                </ul>
-            </ul>
+                <li className='text-secondary' >Adedeji  <FontAwesomeIcon icon={icon({name: 'caret-down', style: 'solid'})} /></li>
         </nav>
     )
 }

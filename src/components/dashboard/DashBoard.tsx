@@ -18,6 +18,7 @@ import use from './user-friends.svg';
 import home from './home.svg';
 import brief from './briefcase.svg';
 import scroll from './scroll.svg';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -25,51 +26,46 @@ import scroll from './scroll.svg';
 export const DashBoard = () => {
     return(
         <div className='dash'>
-            <ul>
-                <div><img src={brief} alt="" />Switch Organization</div>
-                <li>
+                <h2><img src={brief} alt="" />Switch Organization</h2>
+                <h3>
                 <img src={home} alt="" />Dashboard
-                    <ul>
-                        <li>CUSTOMER
+                </h3>
+                        <h3>CUSTOMER</h3>
                             <ul>
-                                <li><img src={use} alt="" />Users</li>
-                                <li><img src={guarant} alt="" />Guarantors</li>
-                                <li><img src={loans} alt="" /> Loans</li>
-                                <li><FontAwesomeIcon icon={icon({name: "handshake", style: 'regular'})} />Decision Models</li>
-                                <li><img src={pig} alt="" />Savings</li>
-                                <li><img src={req} alt="" />Loan Request</li>
-                                <li><img src={useC} alt="" />List</li>
-                                <li><img src={karma} alt="" />Karma</li>
+                                <NavLink to="list" ><img src={use} alt="" />Users</NavLink>
+                                <NavLink to="" ><img src={guarant} alt="" />Guarantors</NavLink>
+                                <NavLink to=""><img src={loans} alt="" /> Loans</NavLink>
+                                <NavLink to="" ><FontAwesomeIcon icon={icon({name: "handshake", style: 'regular'})} />Decision Models</NavLink>
+                                <NavLink to="" ><img src={pig} alt="" />Savings</NavLink>
+                                <NavLink to="" ><img src={req} alt="" />Loan Request</NavLink>
+                                <NavLink to="" ><img src={useC} alt="" />List</NavLink>
+                                <NavLink to="" ><img src={karma} alt="" />Karma</NavLink>
                             </ul>
-                        </li>
-                        <li>BUISNESSES
+                        
+                        <h3>BUISNESSES</h3>
                         <ul>
-                                <li><img src={brief} alt="" />Organization</li>
-                                <li><img src={loanP} alt="" />Loan Products</li>
-                                <li><img src={saving} alt="" />Savings Products</li>
-                                <li><FontAwesomeIcon icon={icon({name: "coins", style: 'solid'})} />Fees and Charges</li>
-                                <li><img src={trans} alt="" />Transactions</li>
-                                <li><img src={serve} alt="" />Services</li>
-                                <li><img src={servU} alt="" />Service Accounts</li>
-                                <li><img src={scroll} alt="" />Settlements</li>
-                                <li><FontAwesomeIcon icon={icon({name: "chart-column", style: 'solid'})} />Reports</li>
+                                <NavLink to="" ><img src={brief} alt="" />Organization</NavLink>
+                                <NavLink to="" ><img src={loanP} alt="" />Loan Products</NavLink>
+                                <NavLink to=""><img src={saving} alt="" />Savings Products</NavLink>
+                                <NavLink to="" ><FontAwesomeIcon icon={icon({name: "coins", style: 'solid'})} />Fees and Charges</NavLink>
+                                <NavLink to="" ><img src={trans} alt="" />Transactions</NavLink>
+                                <NavLink to="" ><img src={serve} alt="" />Services</NavLink>
+                                <NavLink to="" ><img src={servU} alt="" />Service Accounts</NavLink>
+                                <NavLink to="" ><img src={scroll} alt="" />Settlements</NavLink>
+                                <NavLink to="" ><FontAwesomeIcon icon={icon({name: "chart-column", style: 'solid'})} />Reports</NavLink>
                             </ul>
-                        </li>
-                        <li>SETTINGS
+                        
+                        <h3>SETTINGS</h3>
                             <ul>
-                                <li><img src={prev} alt="" />Preferences</li>
-                                <li><img src={fnp} alt="" />Fees and Pricing</li>
-                                <li><img src={log} alt="" />Audit Logs</li>
+                                <NavLink to="" ><img src={prev} alt="" />Preferences</NavLink>
+                                <NavLink to="" ><img src={fnp} alt="" />Fees and Pricing</NavLink>
+                                <NavLink to="" ><img src={log} alt="" />Audit Logs</NavLink>
                             </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </div>
     )
 }
-{/* <li><FontAwesomeIcon icon={icon({name: "handshake", style: 'regular'})} />Decision Models</li>
-                                <li><FontAimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": ",}} />Savings</li>
-                                <li><FontAwesoimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": "01",}} />Loan Request</li>
-                                <li><FontAimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": "01",}} />White List</li>
-                                <li><FontAimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": "01",}} />Karma</li> */}
+{/* <NavLink><FontAwesomeIcon icon={icon({name: "handshake", style: 'regular'})} />Decision Models</NavLink>
+                                <NavLink><FontAimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": ",}} />Savings</NavLink>
+                                <NavLink><FontAwesoimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": "01",}} />Loan Request</NavLink>
+                                <NavLink><FontAimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": "01",}} />White List</NavLink>
+                                <NavLink><FontAimg src={} alt="" style={{"--fa-primary-opacity": "0.4", "--fa-secondary-opacity": "01",}} />Karma</NavLink> */}

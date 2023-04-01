@@ -1,4 +1,6 @@
-import { Route, Routes } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { DashBoard } from '../components/dashboard/DashBoard';
+import { Nav } from '../components/nav/Nav';
 
 
 
@@ -6,8 +8,13 @@ import { Route, Routes } from 'react-router-dom';
 
 export const Home = () => {
     return (
-        <div>
+     <>
+        <Nav />
+        <DashBoard />
+        <main>
+            <Outlet />
            
-        </div>
+        </main>
+     </>
     )
 }

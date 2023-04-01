@@ -5,18 +5,15 @@
     text-align: left;
     background-color: $primary;
     list-style: none;
-    ul
+    flex-direction: column;
+    h3
     {
-      flex-direction: column;
+      margin-bottom: 40px;
     }
 }
 
 
-    @if(li){
-      li{  
-        &:hover
-        {
-            background-color: lighten($tertiary, 2)
-        }
-    }
+.active 
+{  
+  background-color: lighten($tertiary, 2)
 }

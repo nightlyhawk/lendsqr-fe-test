@@ -71,15 +71,15 @@ export const Users = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
                 {users && users.map(({ user }: UserProp) => (
-                    <tr key={user.id}>
-                        <td>{user.orgName}</td>
-                        <td>{user.userName}</td>
-                        <td>{user.email}</td>
-                        <td>{user.phoneNumber}</td>
-                        <td>{user.createdAt}</td>
+                    <tr key={user?.id}>
+                        <td>{user?.orgName}</td>
+                        <td>{user?.userName}</td>
+                        <td>{user?.email}</td>
+                        <td>{user?.phoneNumber}</td>
+                        <td>{user?.createdAt}</td>
                         <td>{ }</td>
                         <img src={menu} alt="menu" onClick={handle2} />
-                        <OverLay variant={ovl} id={user.id} />
+                        <OverLay variant={ovl} id={user?.id} />
                     </tr>
                 ))}
             </table>

@@ -71,12 +71,12 @@ export const Users = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
                 {users && users.map(({ user }: UserProp) => (
-                    <tr key={user?.id}>
-                        <td>{user?.orgName}</td>
-                        <td>{user?.userName}</td>
-                        <td>{user?.email}</td>
-                        <td>{user?.phoneNumber}</td>
-                        <td>{user?.createdAt}</td>
+                    <tr key={user && user.id}>
+                        <td>{user && user.orgName}</td>
+                        <td>{user && user.userName}</td>
+                        <td>{user && user.email}</td>
+                        <td>{user && user.phoneNumber}</td>
+                        <td>{user && user.createdAt}</td>
                         <td>{ }</td>
                         <img src={menu} alt="menu" onClick={handle2} />
                         <OverLay variant={ovl} id={user?.id} />

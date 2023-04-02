@@ -10,7 +10,7 @@ export const useCount = <T extends {userName: string, loanRepayment: number, acc
     const [loans, setLoans] = useState(0)
     const [save, setSave] = useState(0)
     function updateCount(){
-        for (let i=0; i < data.length; i++) {
+        for (let i=0; i < data?.length; i++) {
             if (data[i].userName) {
                 setUsers(users + 1)
             }

@@ -10,6 +10,8 @@ export const useCount = <T extends {userName: string, loanRepayment: number, acc
     const [loans, setLoans] = useState(0)
     const [save, setSave] = useState(0)
     function updateCount(){
+        if(data){
+            console.log(data.length)
         for (let i=0; i < data?.length; i++) {
             if (data[i].userName) {
                 setUsers(users + 1)
@@ -20,7 +22,7 @@ export const useCount = <T extends {userName: string, loanRepayment: number, acc
             if (data[i].accountBalance > 0.1) {
                 setSave(save + 1)
             }
-        }
+        }}
     }
     useEffect(() => {
         updateCount();

@@ -15,13 +15,13 @@ import menu from './menu.svg';
 type UserProp = {
     user: user
 };
-type user = {
-    id: number
-    orgName: string
-    userName: string
-    email: string
-    phoneNumber: number
-    createdAt: string
+interface user {
+    "id": number
+    "orgName": string
+    "userName": string
+    "email": string
+    "phoneNumber": number
+    "createdAt": string
 }
 
 

@@ -23,7 +23,7 @@ export const Nav = () => {
                     </Button>
                 </li>         
                 </ul>   
-                <ul>
+                <ul className='navments' >
                 <li className='text-secondary list-pad' >Docs</li>
                 <li className='list-pad' ><img src={notif} alt="notifications"/> </li>
                 <li><img src={profile} alt='profile' className='circle' />

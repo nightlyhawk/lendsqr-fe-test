@@ -39,6 +39,13 @@ nav
     border-bottom-right-radius: 5px;
 }
 
+.navments
+{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
 .list-pad
 {
   padding: 10px;

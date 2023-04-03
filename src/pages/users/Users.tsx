@@ -28,8 +28,8 @@ interface user {
 
 export const Users = () => {
     const { data: users, loading, error } = useFetch(
-        "https://64298eeeebb1476fcc4be966.mockapi.io/api/v1/users"
-       // "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
+       // "https://64298eeeebb1476fcc4be966.mockapi.io/api/v1/users"
+        "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
     );
     const value = useCount(users);
     const [filters, setFilters] = useState("filter-off");

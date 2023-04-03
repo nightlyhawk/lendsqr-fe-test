@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 
 
+
+
 export type UseFetchProps = {
     status: Number,
     statusText: String,
-    data: any,
+    data: [],
     error: any,
     loading: boolean
 }
@@ -13,7 +15,7 @@ export type UseFetchProps = {
 export const useFetch = (url: string): UseFetchProps => {
     const [status, setStatus] = useState<Number>(0);
     const [statusText, setStatusText] = useState<String>('');
-    const [data, setData] = useState<any>([]);
+    const [data, setData] = useState<[]>([]);
     const [error, setError] = useState<any | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 

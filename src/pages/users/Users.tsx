@@ -12,7 +12,7 @@ import { OverLay } from "../../components/overlay/OverLay";
 import menu from './menu.svg';
 
 
-type UserProp = {
+export type UserProp = {
     user: user
 };
 interface user {
@@ -22,6 +22,50 @@ interface user {
     "email": string
     "phoneNumber": number
     "createdAt": string
+    "firstName": string
+    "lastName": string
+    "accountNumber": number
+    "accountBalance": number
+    "lastActiveDate": number
+   "profile": profile,
+   "guarantor":guarantor
+   "socials":socials
+   "education":education
+}
+
+interface profile {
+    "firstName":string,
+    "lastName":string,
+    "phoneNumber":number,
+    "avatar": any,
+    "gender":"Male" | "Female",
+    "bvn":number,
+    "address": string,
+    "currency":"NGN"
+}
+
+interface guarantor {
+    "firstName":string,
+    "lastName":string,
+    "phoneNumber":number,
+    "gender":string,
+    "address":string
+}
+
+interface socials {
+    "facebook":string,
+    "instagram":string,
+    "twitter":string
+}
+
+interface education {
+    "level":string,
+    "employmentStatus":"Employed" | "Unemployed",
+    "sector":string,
+    "duration":any,
+    "officeEmail":string,
+    "monthlyIncome":[number],
+    "loanRepayment": number
 }
 
 

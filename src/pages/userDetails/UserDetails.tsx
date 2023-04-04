@@ -3,6 +3,7 @@ import { useFetch } from "../../components/useFetch";
 import { Link, useLocation } from 'react-router-dom';
 
 
+
 type IdProps = {
     id: number
 }
@@ -17,9 +18,12 @@ type LocationProps = {
 export const UserDetail = () => {
     const location = useLocation() as unknown as LocationProps;
     const state = location.state 
-    const {data: user, error, loading} = useFetch(
+    //const user: UserProp
+      
+    const { data: user , error, loading} = useFetch(
         `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`
     );
+    
     return (
         <div className="text-secondary">
             <Link to='/users'>Back to Users</Link>
@@ -79,7 +83,7 @@ export const UserDetail = () => {
             </div>
             <div>
                 <h3>Guarantor</h3>
-                <div> <h4>FULL NAME</h4> <p>{user.guarantor.dirstName} {user.guarantor.lastName}</p></div>
+                <div> <h4>FULL NAME</h4> <p>{user.guarantor.firstName} {user.guarantor.lastName}</p></div>
                 <div><h4>PHONE NUMBER</h4> <p>{user.guarantor.phoneNumber}</p></div>
                 <div><h4>EMAIL ADDRESS</h4> <p>{user.guarantor.email}</p></div>
                 <div><h4>RELATIONSHIP</h4> <p></p></div>

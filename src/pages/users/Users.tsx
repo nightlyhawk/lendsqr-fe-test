@@ -16,7 +16,7 @@ export type UserProp = {
     user: user
 };
 interface user {
-    "id": number
+    id: number
     "orgName": string
     "userName": string
     "email": string

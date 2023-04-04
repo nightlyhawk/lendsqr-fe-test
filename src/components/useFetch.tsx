@@ -26,7 +26,11 @@ export const useFetch = (url: string): UseFetchProps => {
           const json = await apiResponse.json();
           setStatus(apiResponse.status);
           setStatusText(apiResponse.statusText);
+          if (!json.ok){
+            throw Error("could not fetch data for that resource")
+          }
           setData(json);
+          console.log(json);
         } catch (error) {
           setError(error);
         }

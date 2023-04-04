@@ -16,21 +16,21 @@ export type UserProp = {
     user: user
 };
 interface user {
-   id: number
-   orgName: string
-   userName: string
-   email: string
-   phoneNumber: number
-   createdAt: string
-   firstName: string
-   lastName: string
-   accountNumber: number
-   accountBalance: number
-   lastActiveDate: number
+   id: number,
+   orgName: string,
+   userName: string,
+   email: string,
+   phoneNumber: number,
+   createdAt: string,
+   firstName: string,
+   lastName: string,
+   accountNumber: number,
+   accountBalance: number,
+   lastActiveDate: number,
    profile: profile,
-   guarantor:guarantor
-   socials:socials
-   education:education
+   guarantor:guarantor,
+   socials:socials,
+   education:education,
 }
 
 interface profile {
@@ -41,7 +41,7 @@ interface profile {
     gender: "Male" | "Female",
     bvn:number,
     address: string,
-    currency:"NGN"
+    currency:"NGN",
 }
 
 interface guarantor {
@@ -49,13 +49,13 @@ interface guarantor {
     lastName:string,
     phoneNumber:number,
     gender:string,
-    address:string
+    address:string,
 }
 
 interface socials {
     facebook:string,
     instagram:string,
-    twitter:string
+    twitter:string,
 }
 
 interface education {
@@ -65,14 +65,13 @@ interface education {
     duration:any,
     officeEmail:string,
     monthlyIncome:[number],
-    loanRepayment: number
+    loanRepayment: number,
 }
 
 
 
 export const Users = () => {
     const { data: users, loading, error } = useFetch(
-       // "https://64298eeeebb1476fcc4be966.mockapi.io/api/v1/users"
         "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
     );
     const value = useCount(users);

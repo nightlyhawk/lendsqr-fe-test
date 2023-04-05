@@ -13,25 +13,25 @@ import menu from './menu.svg';
 
 
 export type UserProp = {
-    user: user
+    user: [user]
 };
 interface user {
-    "id": number
-    "orgName": string
-    "userName": string
-    "email": string
-    "phoneNumber": number
-    "createdAt": string
-    "firstName": string
-    "lastName": string
-    "accountNumber": number
-    "accountBalance": number
-    "lastActiveDate": number
+   "id": number,
+   "orgName": string,
+   "userName": string,
+   "email": string,
+   "phoneNumber": number,
+   "createdAt": string,
+   "firstName": string,
+   "lastName": string,
+   "accountNumber": number,
+   "accountBalance": number,
+   "lastActiveDate": number,
    "profile": profile,
-   "guarantor":guarantor
-   "socials":socials
-   "education":education
-}
+   "guarantor":guarantor,
+   "socials":socials,
+   "education":education,
+};
 
 interface profile {
     "firstName":string,
@@ -115,7 +115,7 @@ export const Users = () => {
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {users && users.map(({ user: {id, orgName, userName, email, phoneNumber, createdAt} }: UserProp) => (
+                {users && users.map(({ user: [{id, orgName, userName, email, phoneNumber, createdAt}] }: UserProp) => (
                     <tr key={id}>
                         <td>{orgName}</td>
                         <td>{userName}</td>

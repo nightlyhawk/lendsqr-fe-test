@@ -29,7 +29,7 @@ export const useFetch = (url: string): UseFetchProps => {
           if (!json.ok){
             throw Error("could not fetch data for that resource")
           }
-          setData(json);
+          setData([json]);
           console.log(json);
         } catch (error) {
           setError(error);

@@ -13,7 +13,7 @@ import menu from './menu.svg';
 
 
 export type UserProp = {
-    user: user
+    user: user[]
 };
 interface user {
    "id": number,
@@ -114,16 +114,16 @@ export const Users = () => {
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {users && users.map(({user}: UserProp) => (
-                    <tr key={user.id}>
-                        <td>{user.orgName}</td>
-                        <td>{user.userName}</td>
-                        <td>{user.email}</td>
-                        <td>{user.phoneNumber}</td>
-                        <td>{user.createdAt}</td>
+                {users && users.map(({user: [{id, orgName, userName, email, phoneNumber, createdAt}]}: UserProp) => (
+                    <tr key={id}>
+                        <td>{orgName}</td>
+                        <td>{userName}</td>
+                        <td>{email}</td>
+                        <td>{phoneNumber}</td>
+                        <td>{createdAt}</td>
                         <td></td>
                         <img src={menu} alt="menu" onClick={handle2} />
-                        <OverLay variant={ovl} id={user.id} />
+                        <OverLay variant={ovl} id={id} />
                     </tr>
                 ))}
             </table>

@@ -121,7 +121,7 @@ export const Users = () => {
                         <td>{user.email}</td>
                         <td>{user.phoneNumber}</td>
                         <td>{user.createdAt}</td>
-                        <td>{ }</td>
+                        <td></td>
                         <img src={menu} alt="menu" onClick={handle2} />
                         <OverLay variant={ovl} id={user.id} />
                     </tr>

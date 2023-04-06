@@ -92,7 +92,7 @@ export const UserDetail = () => {
                 <h3>Guarantor</h3>
                 <div> <h4>FULL NAME</h4> <p>{user.guarantor.firstName} {user.guarantor.lastName}</p></div>
                 <div><h4>PHONE NUMBER</h4> <p>{user.guarantor.phoneNumber}</p></div>
-                <div><h4>EMAIL ADDRESS</h4> <p>{}</p></div>
+                <div><h4>EMAIL ADDRESS</h4> <p></p></div>
                 <div><h4>RELATIONSHIP</h4> <p></p></div>
                </div>
                   </div>

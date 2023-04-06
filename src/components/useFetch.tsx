@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 export type UseFetchProps = {
     status: Number,
     statusText: String,
-    data: [] | any,
+    data: [],
     error: any,
     loading: boolean
 }

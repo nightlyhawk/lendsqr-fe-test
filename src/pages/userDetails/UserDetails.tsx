@@ -36,7 +36,7 @@ export const UserDetail = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>loading...</div>}
 
-                {user && user.map(({ user }: UserProp) => (
+                {user && user.map(({user}: UserProp) => (
                 
                
                   <div>

@@ -33,7 +33,7 @@ export interface user extends Array<T> {
    "education":education,
 }[];
 
-interface T<>{
+interface T{
     user: T[]
 }
 

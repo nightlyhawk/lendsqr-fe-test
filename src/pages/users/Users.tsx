@@ -13,9 +13,9 @@ import menu from './menu.svg';
 
 
 export type UserProp = {
-    user: user
+    user: user[]
 };
-export interface user {
+export interface user extends Array<T> {
    "id": number,
    "orgName": string,
    "userName": string,
@@ -31,7 +31,11 @@ export interface user {
    "guarantor":guarantor,
    "socials":socials,
    "education":education,
-};
+}[];
+
+interface T<>{
+    user: T[]
+}
 
 interface profile {
     "firstName":string,

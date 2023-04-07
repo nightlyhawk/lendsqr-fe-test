@@ -31,7 +31,7 @@ export interface user extends Array<T> {
    "guarantor":guarantor,
    "socials":socials,
    "education":education,
-}[];
+};
 
 interface T{
     user: T[]

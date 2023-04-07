@@ -15,7 +15,7 @@ import menu from './menu.svg';
 export type UserProp = {
     user: user
 };
-interface user {
+export interface user {
    "id": number,
    "orgName": string,
    "userName": string,

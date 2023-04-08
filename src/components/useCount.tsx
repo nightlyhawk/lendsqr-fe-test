@@ -1,5 +1,5 @@
 import { useState, useEffect, useReducer } from "react"
-
+import { user } from "../pages/users/Users";
 // type DataProps = {
 //     data: [data]
 //     propt: "userName" | "loanRepayment" | "accountBalance"
@@ -24,10 +24,7 @@ import { useState, useEffect, useReducer } from "react"
 //     save: number,
 // }
 
-export const useCount = <T extends { userName: string, 
-         loanRepayment: number, 
-         accountBalance: number,
-        }>(data: T[]): { users: number; loans: number; save: number,} => {
+export const useCount = <T extends user>(data: T[]): { users: number; loans: number; save: number,} => {
     const [users, setUsers] = useState<number>(0)
     const [loans, setLoans] = useState<number>(0)
     const [save, setSave] = useState<number>(0)
@@ -38,7 +35,7 @@ export const useCount = <T extends { userName: string,
             if (data[i].userName) {
                 setUsers(users + 1)
             }
-            if (data[i].loanRepayment > 0.1) {
+            if (data[i].education.loanRepayment > 0.1) {
                 setLoans(loans + 1)
             }
             if (data[i].accountBalance > 0.1) {

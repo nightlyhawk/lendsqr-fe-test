@@ -15,7 +15,7 @@ import menu from './menu.svg';
 export type UserProp = {
     user: user[]
 };
-export interface user extends Array<MyType> {
+export interface user {
    "id": number,
    "orgName": string,
    "userName": string,
@@ -75,8 +75,8 @@ interface education {
 
 
 export const Users = () => {
-    const { data: users, loading, error } = useFetch(
-        "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"
+    const { data: users, loading, error } = useFetch<user[]>(
+        "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users", []
     );
     const value = useCount(users);
     const [filters, setFilters] = useState("filter-off");
@@ -118,7 +118,7 @@ export const Users = () => {
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {users && users.map((user: user) => {
+                {users && users.map((user) => {
                     <tr key={user.id}>
                         <td>{user.orgName}</td>
                         <td>{user.userName}</td>

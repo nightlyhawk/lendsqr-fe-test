@@ -21,8 +21,8 @@ export const UserDetail = () => {
     const state = location.state
     //const user: UserProp
 
-    const { data: user, error, loading } = useFetch(
-        `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`
+    const { data: user, error, loading } = useFetch<user[]>(
+        `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`, []
     );
 
     return (
@@ -36,7 +36,7 @@ export const UserDetail = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>loading...</div>}
 
-                {user && user.map((user: user) => (
+                {user && user.map((user) => (
                 
                
                   <div>

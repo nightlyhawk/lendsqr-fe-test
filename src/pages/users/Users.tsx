@@ -118,7 +118,7 @@ export const Users = () => {
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {users && users.map((user) => {
+                {users && users.map((user) => (
                     <tr key={user.id}>
                         <td>{user.orgName}</td>
                         <td>{user.userName}</td>
@@ -129,7 +129,7 @@ export const Users = () => {
                         <img src={menu} alt="menu" onClick={handle2} />
                         <OverLay variant={ovl} id={user.id} />
                     </tr>
-                })}
+                ),)}
             </table>
         </div>
     )

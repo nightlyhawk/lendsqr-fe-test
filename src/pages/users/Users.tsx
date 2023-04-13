@@ -129,7 +129,7 @@ export const Users = () => {
                         <img src={menu} alt="menu" onClick={handle2} />
                         <OverLay variant={ovl} id={user.id} />
                     </tr>
-                ),)}
+                ))}
             </table>
         </div>
     )

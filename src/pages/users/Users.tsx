@@ -21,7 +21,7 @@ export interface user {
    "userName": string,
    "email": string,
    "phoneNumber": number,
-   "createdAt": string,
+   "createdAt": any,
    "firstName": string,
    "lastName": string,
    "accountNumber": number,
@@ -68,7 +68,7 @@ interface education {
     "sector":string,
     "duration":any,
     "officeEmail":string,
-    "monthlyIncome":[number],
+    "monthlyIncome":any,
     "loanRepayment": number
 }
 

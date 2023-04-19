@@ -11,10 +11,10 @@ export type UseFetchProps = {
 }
 
 
-export const useFetch = <T,>(url: string, initialState: T) => {
+export const useFetch = (url: string) => {
     const [status, setStatus] = useState<Number>(0);
     const [statusText, setStatusText] = useState<String>('');
-    const [data, setData] = useState<T>(initialState);
+    const [data, setData] = useState([]);
     const [error, setError] = useState<any | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 

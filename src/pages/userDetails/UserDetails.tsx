@@ -1,5 +1,5 @@
 import { Button } from "../../components/button/Button";
-import { useFetch } from "../../components/useFetch";
+import { useAxios } from "../../hooks/useAxios";
 import { Link, useLocation } from 'react-router-dom';
 import { user } from "../users/Users";
 
@@ -21,8 +21,8 @@ export const UserDetail = () => {
     const state = location.state
     //const user: UserProp
 
-    const { data: user, error, loading } = useFetch(
-        `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`
+    const [ loading, data, error, request ] = useAxios<user[]>(
+     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`}
     );
 
     return (
@@ -36,7 +36,7 @@ export const UserDetail = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>loading...</div>}
 
-                {user && user.map((user: user) => (
+                {data && data.map((user) => (
                 
                
                   <div>

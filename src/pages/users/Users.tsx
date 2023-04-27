@@ -1,5 +1,5 @@
-import { useFetch } from "../../components/useFetch";
-import { useCount } from "../../components/useCount";
+import { useAxios } from "../../hooks/useAxios";
+import { useCount } from "../../hooks/useCount";
 import { useState } from 'react';
 import { Totals } from "../../components/userContainer/Totals";
 import userN from '../../components/userContainer/users.svg';
@@ -75,10 +75,10 @@ interface education {
 
 
 export const Users = () => {
-    const { data: users, loading, error } = useFetch(
-        "https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users", 
+    const [ loading, data, error, request ] = useAxios<user[]>(
+        {method: 'GET', url:"https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"} 
     );
-    const value = useCount(users);
+    const value = useCount(data);
     const [filters, setFilters] = useState("filter-off");
     const [ovl, setOvl] = useState("overlay-off");
     function handle1() {
@@ -114,11 +114,11 @@ export const Users = () => {
                     <th>PHONE NUMBER <img src={filter} alt="filter" onClick={handle1}/> </th>
                     <th>DATE JOINED<img src={filter} alt="filter" onClick={handle1}/></th>
                     <th>STATUS<img src={filter} alt="filter" onClick={handle1}/></th>
-                    <Filter users={users} variant={filters} />
+                    <Filter users={data} variant={filters} />
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {users && users.map((user: user) => (
+                {data && data.map((user) => (
                     <tr key={user.id}>
                         <td>{user.orgName}</td>
                         <td>{user.userName}</td>

@@ -1,6 +1,6 @@
 import { Button } from "../button/Button"
 type FilterProps<T> = {
-    users: T[]
+    users: T[] | undefined
     variant: string |  React.MutableRefObject<undefined>
 }
 

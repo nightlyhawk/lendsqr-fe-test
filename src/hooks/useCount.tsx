@@ -24,7 +24,7 @@ import { user } from "../pages/users/Users";
 //     save: number,
 // }
 
-export const useCount = <T extends user>(data: T[]): { users: number; loans: number; save: number,} => {
+export const useCount = <T extends user>(data: T[] | undefined): { users: number; loans: number; save: number,} => {
     const [users, setUsers] = useState<number>(0)
     const [loans, setLoans] = useState<number>(0)
     const [save, setSave] = useState<number>(0)

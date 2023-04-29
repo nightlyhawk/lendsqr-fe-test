@@ -11,6 +11,12 @@
     box-shadow: 2% 10px 10px $primary;
     img
     {
-        border-radius: $circle-border
+        border-radius: $circle-border;
+        height: 18px;
     }
+}
+.containTotal
+{
+    display: flex;
+    flex-direction: row;
 }

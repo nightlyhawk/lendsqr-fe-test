@@ -8,13 +8,13 @@ import { Nav } from '../components/nav/Nav';
 
 export const Home = () => {
     return (
-     <>
+     <section>
         <Nav />
         <DashBoard />
         <main>
             <Outlet />
            
         </main>
-     </>
+     </section>
     )
 }

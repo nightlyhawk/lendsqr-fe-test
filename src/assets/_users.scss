@@ -1,3 +1,9 @@
+@mixin slider{
+    height: 19px;
+    width: 16px;
+    text-align: center;
+    cursor: pointer;
+}
 th
 {
     img
@@ -13,4 +19,25 @@ table
     {
         border-bottom: $secondary;
     }
+}
+.pagination
+{
+    display: flex;
+    flex-direction: row;
+    background-color: $base;
+    color: $secondary;
+}
+.page-item
+{
+    @include slider;
+    opacity: 0.5;
+}
+.page-link
+{
+    @include slider;
+    background-color: $primary;
+}
+.pactive
+{
+    opacity: 1;
 }

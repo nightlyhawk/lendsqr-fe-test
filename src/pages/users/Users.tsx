@@ -10,6 +10,7 @@ import filter from './filter.svg';
 import { Filter } from "../../components/filter/Filter";
 import { OverLay } from "../../components/overlay/OverLay";
 import menu from './menu.svg';
+import { useSlider } from "../../components/slider";
 
 
 export type UserProp = {
@@ -78,6 +79,7 @@ export const Users = () => {
     const [ loading, data, error, request ] = useAxios<user[]>(
         {method: 'GET', url:"https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users"} 
     );
+    const pagination = useSlider(data);
     const value = useCount(data);
     const [filters, setFilters] = useState("filter-off");
     const [ovl, setOvl] = useState("overlay-off");
@@ -95,12 +97,13 @@ export const Users = () => {
             setOvl("overlay-off")
         }
     }
+   
 
 
     return (
         <div className="text-secondary">
             <h1>Users</h1>
-            <div>
+            <div className="containTotal">
             <Totals src={userN} label='USERS' count={value.users}></Totals>
             <Totals src={active} label='ACTIVE USERS' count={value.users}></Totals>
             <Totals src={loans} label='USERS WITH LOANS' count={value.loans}></Totals>
@@ -118,7 +121,7 @@ export const Users = () => {
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {data && data.slice(0, 10).map((user) => (
+                {pagination && pagination.records.map((user) => (
                     <tr key={user.id}>
                         <td>{user.orgName}</td>
                         <td>{user.userName}</td>
@@ -131,6 +134,26 @@ export const Users = () => {
                     </tr>
                 ))}
             </table>
+            <nav>
+                <ul className="pagination">
+                    <li className="page-link">
+                        <a href="#" 
+                        onClick={pagination?.prePage}>&lt;</a>
+                    </li>
+                    {
+                        pagination?.numbers.map((n, i) => (
+                            <li className={`page-item ${pagination?.currentPage === n? 'pactive' :''}`} key={i}>
+                                <a href="#" className="page-link"
+                                onClick={() => pagination?.changeCPage(n)}>{n}</a>
+                            </li>
+                        ))
+                    }
+                    <li className="page-link">
+                        <a href="#" 
+                        onClick={pagination?.nexPage}>&gt;</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     )
 }

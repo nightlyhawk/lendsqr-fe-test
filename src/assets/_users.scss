@@ -1,0 +1,16 @@
+th
+{
+    img
+    {
+        cursor: pointer;
+    }
+}
+table
+{
+    background-color: $base;
+    box-shadow: 2% 10px 10px $primary;
+    tr
+    {
+        border-bottom: $secondary;
+    }
+}

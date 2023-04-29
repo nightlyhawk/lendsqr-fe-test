@@ -257,12 +257,17 @@ nav h1 {
 
 .totals {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   width: 15%;
   text-align: left;
   color: #213F7D;
-  background-color: #E5E5E5;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 2% 10px 10px #E5E5E5;
+}
+.totals img {
+  border-radius: 999px;
 }
 
 .dash {
@@ -378,4 +383,16 @@ nav h1 {
 
 .text-white {
   color: white;
+}
+
+th img {
+  cursor: pointer;
+}
+
+table {
+  background-color: white;
+  box-shadow: 2% 10px 10px #E5E5E5;
+}
+table tr {
+  border-bottom: #213F7D;
 }

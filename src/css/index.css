@@ -205,7 +205,6 @@ nav {
   padding: 11px;
   max-width: 100%;
   margin: 0 auto;
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -258,7 +257,7 @@ nav h1 {
 
 .totals {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: auto;
   width: 15%;
   text-align: left;
@@ -267,7 +266,7 @@ nav h1 {
 }
 
 .dash {
-  font-size: 16px;
+  font-size: 15px;
   display: flex;
   width: 17%;
   text-align: left;
@@ -280,9 +279,6 @@ nav h1 {
 }
 .dash a {
   text-decoration: none;
-}
-.dash a.active {
-  background-color: #eaeaea;
 }
 
 .icon {

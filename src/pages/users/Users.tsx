@@ -118,7 +118,7 @@ export const Users = () => {
                 </tr>
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
-                {data && data.map((user) => (
+                {data && data.slice(0, 20).map((user) => (
                     <tr key={user.id}>
                         <td>{user.orgName}</td>
                         <td>{user.userName}</td>

@@ -1,6 +1,6 @@
 .dash
 {
-  font-size: 16px;
+  font-size: 15px;
   display: flex;
   width: 17%;
   text-align: left;
@@ -15,10 +15,10 @@
    {
     text-decoration: none;
   }
-  a.active 
-  {
-    background-color: lighten($primary, 2);
-  }
+  // a.active 
+  // {
+  //   background-color: lighten($primary, 2);
+  // }
 }
 .icon
 {

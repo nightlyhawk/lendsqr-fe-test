@@ -4,8 +4,8 @@ import { user } from "../pages/users/Users";
 
 
 export const useSlider = (data: user[] | undefined) => {
-    if(data){
     const [currentPage, setCurrentPage] = useState(1);
+    if(data){
     const recordsPerPage = 10;
     const lastIndex = currentPage * recordsPerPage;
     const firstIndex = lastIndex - recordsPerPage;

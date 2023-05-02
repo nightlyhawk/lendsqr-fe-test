@@ -143,7 +143,7 @@ export const Users = () => {
                     {
                         pagination?.numbers.map((n, i) => (
                             <li className={`page-item ${pagination?.currentPage === n? 'pactive' :''}`} key={i}>
-                                <a href="#" className="page-link"
+                                <a href="#"
                                 onClick={() => pagination?.changeCPage(n)}>{n}</a>
                             </li>
                         ))

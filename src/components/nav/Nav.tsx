@@ -10,10 +10,10 @@ import profile from './profile.png'
 export const Nav = () => {
     return (
         <nav>
-                <h1>
-                    <img src={logo} alt='logo' />
-                </h1>
-                <ul className='search' >
+                <ul>
+                <li>
+                <img src={logo} alt='logo' />
+                </li>
                 <li>
                     <input type="text" name='search' placeholder='search' className='input-hgt' />
                 </li>
@@ -21,9 +21,7 @@ export const Nav = () => {
                     <Button variant='btn-tertiary' type='button'> 
                     <img src={magglass} alt="search"/>
                     </Button>
-                </li>         
-                </ul>   
-                <ul className='navments' >
+                </li>          
                 <li className='text-secondary list-pad' >Docs</li>
                 <li className='list-pad' ><img src={notif} alt="notifications"/> </li>
                 <li><img src={profile} alt='profile' className='circle' />

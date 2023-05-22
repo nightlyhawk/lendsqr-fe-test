@@ -104,10 +104,10 @@ export const Users = () => {
         <div className="text-secondary">
             <h1>Users</h1>
             <div className="containTotal">
-            <Totals src={userN} label='USERS' count={value.users}></Totals>
-            <Totals src={active} label='ACTIVE USERS' count={value.users}></Totals>
-            <Totals src={loans} label='USERS WITH LOANS' count={value.loans}></Totals>
-            <Totals src={savings} label='USERS WITH SAVINGS' count={value.save}></Totals>
+            <Totals src={userN} label='USERS' count={value.users} tag ='totals totals-right' ></Totals>
+            <Totals src={active} label='ACTIVE USERS' count={value.users} tag ='totals totals-right' ></Totals>
+            <Totals src={loans} label='USERS WITH LOANS' count={value.loans} tag ='totals totals-right' ></Totals>
+            <Totals src={savings} label='USERS WITH SAVINGS' count={value.save} tag ='totals' ></Totals>
             </div>
             <table>
                 <tr>

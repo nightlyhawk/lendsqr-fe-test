@@ -15,6 +15,12 @@ nav
 }
 }
 
+.thebody
+{
+  display: flex;
+  flex-direction: row;
+}
+
 .search
 {
   margin: auto;

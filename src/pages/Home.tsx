@@ -10,11 +10,13 @@ export const Home = () => {
     return (
      <section>
         <Nav />
+        <div className='thebody'>
         <DashBoard />
         <main>
             <Outlet />
            
         </main>
+        </div>
      </section>
     )
 }

@@ -216,6 +216,11 @@ nav h1 {
   margin-right: auto;
 }
 
+.thebody {
+  display: flex;
+  flex-direction: row;
+}
+
 .search {
   margin: auto;
   width: 25%;

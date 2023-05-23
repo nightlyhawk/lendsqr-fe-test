@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-import loans from './Loansbag.svg';
+import sack from './sack 1.svg';
 import loanP from './loans.svg';
 import saving from './savings.svg';
 import trans from './icontransact.svg';
@@ -18,6 +18,10 @@ import use from './user-friends.svg';
 import home from './home.svg';
 import brief from './briefcase.svg';
 import scroll from './scroll.svg';
+import handshake from './handshake-regular 1.svg';
+import next from './np_next_2236826_000000 2.svg';
+import coins from './coins-solid 1.svg';
+import chartbar from './chart-bar 2.svg'
 import { NavLink } from 'react-router-dom';
 
 
@@ -26,7 +30,7 @@ import { NavLink } from 'react-router-dom';
 export const DashBoard = () => {
     return(
         <div className='dash text-secondary'>
-                <h2><img className='icon' src={brief} alt="" />Switch Organization</h2>
+                <h2><img className='icon' src={brief} alt="" />Switch Organization<img className='icon' src={next} alt="" /></h2>
                 <h3>
                 <img className='icon' src={home} alt="" />Dashboard
                 </h3>
@@ -34,8 +38,8 @@ export const DashBoard = () => {
                         
                                 <NavLink to="list" ><img className='icon' src={use} alt="" />Users</NavLink>
                                 <NavLink to="" ><img className='icon' src={guarant} alt="" />Guarantors</NavLink>
-                                <NavLink to=""><img className='icon' src={loans} alt="" /> Loans</NavLink>
-                                <NavLink to="" ><FontAwesomeIcon icon={icon({name: "handshake", style: 'regular'})} />Decision Models</NavLink>
+                                <NavLink to=""><img className='icon' src={sack} alt="" />Loans</NavLink>
+                                <NavLink to="" ><img className='icon' src={handshake} alt="" />Decision Models</NavLink>
                                 <NavLink to="" ><img className='icon' src={pig} alt="" />Savings</NavLink>
                                 <NavLink to="" ><img className='icon' src={req} alt="" />Loan Request</NavLink>
                                 <NavLink to="" ><img className='icon' src={useC} alt="" />List</NavLink>
@@ -47,12 +51,12 @@ export const DashBoard = () => {
                                 <NavLink to="" ><img className='icon' src={brief} alt="" />Organization</NavLink>
                                 <NavLink to="" ><img className='icon' src={loanP} alt="" />Loan Products</NavLink>
                                 <NavLink to=""><img className='icon' src={saving} alt="" />Savings Products</NavLink>
-                                <NavLink to="" ><FontAwesomeIcon icon={icon({name: "coins", style: 'solid'})} />Fees and Charges</NavLink>
+                                <NavLink to="" ><img className='icon' src={coins} alt="" />Fees and Charges</NavLink>
                                 <NavLink to="" ><img className='icon' src={trans} alt="" />Transactions</NavLink>
                                 <NavLink to="" ><img className='icon' src={serve} alt="" />Services</NavLink>
                                 <NavLink to="" ><img className='icon' src={servU} alt="" />Service Accounts</NavLink>
                                 <NavLink to="" ><img className='icon' src={scroll} alt="" />Settlements</NavLink>
-                                <NavLink to="" ><FontAwesomeIcon icon={icon({name: "chart-column", style: 'solid'})} />Reports</NavLink>
+                                <NavLink to="" ><img className='icon' src={chartbar} alt="" />Reports</NavLink>
                             
                         
                         <h3>SETTINGS</h3>

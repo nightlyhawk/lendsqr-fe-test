@@ -43,6 +43,8 @@ nav
   height: $btn_height_xs - 2;
   width: 184%;
   border: 1px solid $secondary;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
 .li-1

@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 12px;
+  font-weight: 700;
   background-color: #E5E5E5;
 }
 
@@ -236,6 +237,8 @@ nav ul {
   height: 28px;
   width: 184%;
   border: 1px solid #213F7D;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
 .li-1 {
@@ -274,7 +277,7 @@ nav ul {
 .totals {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 150px;
   width: 23%;
   text-align: left;
   color: #213F7D;
@@ -425,16 +428,25 @@ th {
   text-align: left;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 table {
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0px 7px 86px rgb(175, 167, 167);
-  padding: 11px;
-  border-collapse: collapse;
+  box-shadow: 0px 19px 36px rgb(175, 167, 167);
+  border-collapse: separate;
+  border-spacing: 21px;
 }
 table tr {
   position: relative;
   top: 6px;
+}
+table tr th {
+  font-weight: bold;
+}
+table tr td {
   border-bottom: 1px solid #213F7D;
 }
 

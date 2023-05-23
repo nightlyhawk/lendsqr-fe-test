@@ -10,18 +10,29 @@ th
     text-align: left;
     
 }
+h1
+{
+    font-weight: bold;
+}
 table
 {
     background-color: $base;
     border-radius: $base-border-radius;
-    box-shadow: 0px 7px 86px $shadow;
-    padding: 11px;
-    border-collapse: collapse;
+    box-shadow: 0px 19px 36px $shadow;
+    border-collapse: separate;
+    border-spacing: 21px;
     tr
     {
         position: relative;
         top: 6px;
+       th
+       {
+        font-weight: bold;
+       }
+       td
+       {
         border-bottom: 1px solid $secondary;
+       }
     }
 }
 .pagination

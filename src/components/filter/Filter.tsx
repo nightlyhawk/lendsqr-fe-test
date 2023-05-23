@@ -16,7 +16,8 @@ export const Filter = <T extends {orgName: string}>({users, variant}: FilterProp
     return (
       <div className={ `${variant}`} >
           <form>
-            <select>
+            <label htmlFor="organization">Organization</label>
+            <select id="organization" placeholder="select">
             {users && users.map((user) => {
                 return (
                 
@@ -25,11 +26,16 @@ export const Filter = <T extends {orgName: string}>({users, variant}: FilterProp
                 )
             })}
             </select>
-            <input type="text" name=""  />
-            <input type="email" name="" />
-            <input type="date" name="" />
-            <input type="number" name=""/>
-            <select>
+            <label htmlFor="username">Username</label>
+            <input type="text" name="username" placeholder="User" />
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" placeholder="Email" />
+            <label htmlFor="date">Date</label>
+            <input type="date" name="date" placeholder="Date" />
+            <label htmlFor="phonenumber">Phone Number</label>
+            <input type="number" name="phonenumber" placeholder="Phone Number"/>
+            <label htmlFor="status">Status</label>
+            <select id="status" placeholder="select" >
                 <option value="">Active</option>
                 <option value="">Inactive</option>
                 <option value="">Pending</option>

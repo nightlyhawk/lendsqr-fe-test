@@ -3,6 +3,7 @@
     position: absolute;
     z-index: 1;
     height: auto;
+    width: -moz-fit-content; 
     width: fit-content;
     display: flex;
     flex-direction: column;

@@ -326,12 +326,14 @@ nav ul {
   position: relative;
   top: 2px;
   padding-right: 4px;
+  width: 16px;
 }
 
 .overlay-on {
   position: absolute;
   z-index: 1;
   height: auto;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -344,14 +346,28 @@ nav ul {
 
 .filter-on {
   display: flex;
-  flex-direction: column;
+  position: relative;
   z-index: 1;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 7px 18px rgb(175, 167, 167);
+  padding: 10px;
 }
 .filter-on form {
+  display: flex;
   flex-direction: column;
+}
+.filter-on form label {
+  margin-bottom: 20px;
+}
+.filter-on form input {
+  border: 1px solid #213F7D;
+  border-radius: 4px;
+  height: 24px;
 }
 .filter-on div {
   flex-direction: row;
+  gap: 4px;
 }
 
 .filter-off {

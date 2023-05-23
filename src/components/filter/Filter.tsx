@@ -17,7 +17,7 @@ export const Filter = <T extends {orgName: string}>({users, variant}: FilterProp
       <div className={ `${variant}`} >
           <form>
             <label htmlFor="organization">Organization</label>
-            <select id="organization" placeholder="select">
+            <select id="organization">
             {users && users.map((user) => {
                 return (
                 
@@ -35,7 +35,7 @@ export const Filter = <T extends {orgName: string}>({users, variant}: FilterProp
             <label htmlFor="phonenumber">Phone Number</label>
             <input type="number" name="phonenumber" placeholder="Phone Number"/>
             <label htmlFor="status">Status</label>
-            <select id="status" placeholder="select" >
+            <select id="status">
                 <option value="">Active</option>
                 <option value="">Inactive</option>
                 <option value="">Pending</option>
@@ -43,8 +43,8 @@ export const Filter = <T extends {orgName: string}>({users, variant}: FilterProp
             </select>
         </form>
         <div>
-            <Button variant="btn-outlined-tertiary" type="submit">Filter</Button>
             <Button variant="btn-outlined-secondary" type="button">Reset</Button>
+            <Button variant="btn-tertiary" type="submit">Filter</Button>   
         </div>
       </div>
     )

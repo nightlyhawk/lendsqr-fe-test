@@ -346,7 +346,9 @@ nav ul {
 
 .filter-on {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  position: absolute;
+  right: 75%;
   z-index: 1;
   background-color: white;
   border-radius: 7px;
@@ -358,16 +360,20 @@ nav ul {
   flex-direction: column;
 }
 .filter-on form label {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.filter-on form input {
+.filter-on form input, .filter-on form select {
   border: 1px solid #213F7D;
   border-radius: 4px;
   height: 24px;
 }
 .filter-on div {
+  display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 13px;
+}
+.filter-on div button {
+  width: 100px;
 }
 
 .filter-off {

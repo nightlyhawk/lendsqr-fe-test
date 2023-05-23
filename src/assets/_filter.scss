@@ -4,7 +4,9 @@
 .filter-on
 {
    display: flex;
-   position: relative;
+   flex-direction: column;
+   position: absolute;
+   right: 75%;
    z-index: 1;
    background-color: $base;
    border-radius: 7px;
@@ -16,9 +18,9 @@
    flex-direction: column;
    label
    {
-      margin-bottom: 20px;
+      margin-top: 20px;
    }
-   input
+   input, select
    {
     border: 1px solid $secondary;
     border-radius: 4px;
@@ -27,8 +29,13 @@
  }
  div 
  {
-    flex-direction: row;
-    gap: 4px;
+   display: flex;
+   flex-direction: row;
+   gap: 13px;
+   button
+   {
+      width: 100px;
+   }
  }
 }
 

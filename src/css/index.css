@@ -204,14 +204,12 @@ code {
 nav {
   height: 50px;
   padding: 11px;
-  max-width: 100%;
-  margin: 0 auto;
-  list-style: none;
   background-color: white;
 }
 nav ul {
   display: flex;
   flex-direction: row;
+  list-style: none;
 }
 
 .thebody {
@@ -219,36 +217,14 @@ nav ul {
   flex-direction: row;
   gap: 5%;
 }
-
-.search {
-  margin: auto;
-  width: 25%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin-left: -11%;
-}
-
-.search :first-child {
-  width: 71%;
-  margin-right: 9px;
-}
-
-.search button {
-  width: 100%;
-  border: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.navments {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+.thebody main div {
+  margin-top: 51px;
 }
 
 .list-pad {
-  padding: 10px;
+  padding: 22px;
+  position: relative;
+  bottom: 15px;
 }
 
 .circle {
@@ -256,8 +232,43 @@ nav ul {
 }
 
 .input-hgt {
-  width: 75%;
-  height: 42px;
+  position: relative;
+  height: 28px;
+  width: 184%;
+  border: 1px solid #213F7D;
+}
+
+.li-1 {
+  margin-right: -32px;
+}
+
+.li-2 {
+  margin-left: 15%;
+}
+
+.li-3 {
+  position: relative;
+  left: 153px;
+}
+.li-3 button {
+  border-radius: 0px;
+  height: 32px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.li-4 {
+  margin-left: 33%;
+  text-decoration: underline;
+}
+
+.li-5 {
+  bottom: 24px;
+}
+
+.li-6 {
+  position: relative;
+  bottom: 12px;
 }
 
 .totals {
@@ -269,7 +280,7 @@ nav ul {
   color: #213F7D;
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0px 7px 26px black;
+  box-shadow: 0px 7px 26px rgb(175, 167, 167);
   padding-left: 19px;
 }
 .totals img {
@@ -417,9 +428,13 @@ th {
 table {
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0px 7px 26px black;
+  box-shadow: 0px 7px 86px rgb(175, 167, 167);
+  padding: 11px;
+  border-collapse: collapse;
 }
 table tr {
+  position: relative;
+  top: 6px;
   border-bottom: 1px solid #213F7D;
 }
 
@@ -428,6 +443,7 @@ table tr {
   flex-direction: row;
   background-color: white;
   color: #213F7D;
+  list-style: none;
 }
 
 .page-item {

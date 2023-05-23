@@ -28,20 +28,24 @@ export const useCount = <T extends user>(data: T[] | undefined): { users: number
     const [users, setUsers] = useState<number>(0)
     const [loans, setLoans] = useState<number>(0)
     const [save, setSave] = useState<number>(0)
+    let num_name = 0
+    let num = 0
+    let num_save = 0
     function updateCount(){
         if(data){
             console.log(data.length)
         for (let i=0; i < data.length; i++) {
             if (data[i].userName) {
-                data.forEach(() => {
-                    setUsers(users + 1) 
-                });
+                num_name++
+                setUsers(num_name) 
              }
             if (data[i].education.loanRepayment > 0.1) {
-                setLoans(loans + 1)
+                num++
+                setLoans(num)
             }
             if (data[i].accountBalance > 0.1) {
-                setSave(save + 1)
+                num_save++
+                setSave(num_save)
             }
         }}
     }

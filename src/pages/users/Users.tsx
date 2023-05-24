@@ -11,6 +11,7 @@ import { Filter } from "../../components/filter/Filter";
 import { OverLay } from "../../components/overlay/OverLay";
 import menu from './menu.svg';
 import { useSlider } from "../../components/slider";
+import { useNavigate } from "react-router-dom";
 
 
 export type UserProp = {
@@ -83,6 +84,13 @@ export const Users = () => {
     const value = useCount(data);
     const [filters, setFilters] = useState("filter-off");
     const [ovl, setOvl] = useState("overlay-off");
+    const history = useNavigate();
+    const handleRowClick = (user: user) => {
+        history( 
+            '/users/details',
+            {state: user.id}
+        )
+    }
     function handle1() {
         if (filters === "filter-off") {
             setFilters("filter-on")
@@ -122,7 +130,7 @@ export const Users = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>Loading...</div>}
                 {pagination && pagination.records.map((user) => (
-                    <tr key={user.id}>
+                     <tr key={user.id} onClick={()=> handleRowClick(user)}>
                         <td>{user.orgName}</td>
                         <td>{user.userName}</td>
                         <td>{user.email}</td>
@@ -131,6 +139,7 @@ export const Users = () => {
                         <td></td>
                         <img src={menu} alt="menu" onClick={handle2} />
                         <OverLay variant={ovl} id={user.id} />
+                        
                     </tr>
                 ))}
             </table>

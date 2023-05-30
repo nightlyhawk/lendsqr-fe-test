@@ -470,6 +470,7 @@ table tr th {
 }
 table tr td {
   border-bottom: 1px solid #213F7D;
+  cursor: pointer;
 }
 
 .pagination {

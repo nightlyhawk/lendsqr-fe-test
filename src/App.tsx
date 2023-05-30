@@ -10,6 +10,7 @@ import { DashBoard } from "./components/dashboard/DashBoard";
 import { Users } from "./pages/users/Users";
 import { UserDetail } from "./pages/userDetails/UserDetails";
 import { Home } from "./pages/Home";
+import { Component } from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,7 +18,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<SignIn />} />
       <Route path="/users" element={<Home />}>
           <Route path="list" element={<Users />} />
-          <Route path="details" element={<UserDetail />} />
+          <Route path="details" element={<UserDetail />}  />
       </Route>
     </Route>
   )

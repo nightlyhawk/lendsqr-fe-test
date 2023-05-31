@@ -21,7 +21,8 @@ import scroll from './scroll.svg';
 import handshake from './handshake-regular 1.svg';
 import next from './np_next_2236826_000000 2.svg';
 import coins from './coins-solid 1.svg';
-import chartbar from './chart-bar 2.svg'
+import chartbar from './chart-bar 2.svg';
+import signout from './sign-out 1.svg'
 import { NavLink } from 'react-router-dom';
 
 
@@ -36,7 +37,7 @@ export const DashBoard = () => {
                 </h3>
                         <h3>CUSTOMER</h3>
                         
-                                <NavLink to="list" ><img className='icon' src={use} alt="" />Users</NavLink>
+                                <NavLink to="list" className='highlight' ><img className='icon' src={use} alt="" />Users</NavLink>
                                 <NavLink to="" ><img className='icon' src={guarant} alt="" />Guarantors</NavLink>
                                 <NavLink to=""><img className='icon' src={sack} alt="" />Loans</NavLink>
                                 <NavLink to="" ><img className='icon' src={handshake} alt="" />Decision Models</NavLink>
@@ -64,6 +65,9 @@ export const DashBoard = () => {
                                 <NavLink to="" ><img className='icon' src={prev} alt="" />Preferences</NavLink>
                                 <NavLink to="" ><img className='icon' src={fnp} alt="" />Fees and Pricing</NavLink>
                                 <NavLink to="" ><img className='icon' src={log} alt="" />Audit Logs</NavLink>
+
+                        <NavLink  to="" className="log"><img className='icon' src={signout} alt="" />Logout</NavLink> 
+                        <p>V1.20</p>     
                             
         </div>
     )

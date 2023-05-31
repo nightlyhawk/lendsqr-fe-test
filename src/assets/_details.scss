@@ -18,6 +18,7 @@
     li
     {
         width: 16%;
+        text-align: center;
     }
 
     ul
@@ -49,8 +50,9 @@
     }
     .Top2:first-child
     {
-        text-decoration: underline;
+        border-bottom: 1px solid $tertiary;
         color: $tertiary;
+        height: 27px
     }
 }
 
@@ -81,7 +83,9 @@
 {
     display: flex;
     flex-direction: row;
-    float: right;
+    position: relative;
+    left: 73%;
+    bottom: 46px;
     gap: 10px;
     button
     {

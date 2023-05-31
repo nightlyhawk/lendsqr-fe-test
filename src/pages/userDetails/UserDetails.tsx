@@ -41,7 +41,7 @@ export const UserDetail = () => {
                   <div>
                      <ul>
                     <li>
-                        <img src={user.profile.avatar} alt="avatar" />
+                        <img src={user && user.profile.avatar} alt="avatar" />
                         <h2>{user.firstName}{user.lastName}</h2>
                         <p>{user.accountNumber}</p>
                     </li>

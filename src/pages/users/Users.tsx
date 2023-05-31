@@ -43,7 +43,7 @@ interface profile {
     "firstName":string,
     "lastName":string,
     "phoneNumber":number,
-    "avatar": any,
+    "avatar": string,
     "gender":"Male" | "Female",
     "bvn":number,
     "address": string,

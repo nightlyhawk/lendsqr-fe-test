@@ -12,7 +12,7 @@ import { user } from "../users/Users";
 
 type LocationProps = {
     state: {
-        user: user
+        id: user['id']
         from: Location;
     };
 };
@@ -23,7 +23,7 @@ export const UserDetail = () => {
     //const user: UserProp
 
     const [ loading, data, error, request ] = useAxios<user[]>(
-     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.user.id}`}
+     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.id}`}
     );
 
     return (

@@ -37,7 +37,7 @@ export const UserDetail = () => {
                 {error && <div>{error}</div>}
                 {loading && <div>loading...</div>}
 
-                {data && data.map((user) => (
+                {data && Object.entries(data).map(([key, user]) => (
                   <div>
                      <ul>
                     <li>

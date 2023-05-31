@@ -23,7 +23,7 @@ export const UserDetail = () => {
     //const data: dataProp
 
     const [ loading, data, error, request ] = useAxios<user>(
-     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/datas/${state}`}
+     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state}`}
      );
     console.log(data)
     return (

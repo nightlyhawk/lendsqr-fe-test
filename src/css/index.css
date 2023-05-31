@@ -500,3 +500,53 @@ table tr td {
 .pactive {
   opacity: 1;
 }
+
+.Top {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E5E5;
+  border-radius: 3px;
+  box-shadow: 0px 19px 36px rgb(175, 167, 167);
+  margin-bottom: 40px;
+}
+.Top ul {
+  list-style: none;
+}
+.Top .Top1, .Top .Top2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Top .Top1 {
+  margin-bottom: 40px;
+}
+.Top .Top1 li img {
+  border-radius: 999px;
+}
+.Top .Top1 .left {
+  border-right: 1px solid #213F7D;
+}
+.Top .Top1 .right {
+  border-left: 1px solid #213F7D;
+}
+.Top .Top2:first-child {
+  text-decoration: underline;
+  color: #39CDCC;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E5E5;
+  border-radius: 3px;
+  box-shadow: 0px 19px 36px rgb(175, 167, 167);
+}
+.bottom .btm {
+  border-bottom: 1px solid #213F7D;
+}
+.bottom .btm ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

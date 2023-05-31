@@ -1,0 +1,65 @@
+@mixin props{
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    border-radius: 3px;
+    box-shadow: 0px 19px 36px $shadow;
+}
+@mixin row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Top
+{
+    @include props;
+    margin-bottom: 40px;
+
+    ul
+    {
+        list-style: none;
+    }
+    .Top1, .Top2
+    {
+        @include row;
+    }
+    .Top1
+    {
+        li
+        {
+            img
+            {
+                border-radius: $circle-border;
+            }
+        } 
+        margin-bottom: 40px;
+        .left
+        {
+            border-right: 1px solid $secondary;
+        }
+        .right
+        {
+            border-left: 1px solid $secondary;
+        }
+    }
+    .Top2:first-child
+    {
+        text-decoration: underline;
+        color: $tertiary;
+    }
+}
+
+.bottom
+{
+    @include props;
+    .btm
+    {
+        border-bottom: 1px solid $secondary;
+        ul
+        {
+            list-style: none;
+            @include row;
+        }
+    }
+}

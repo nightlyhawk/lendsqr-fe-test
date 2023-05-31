@@ -1,6 +1,6 @@
 import { Button } from "../../components/button/Button";
 import { useAxios } from "../../hooks/useAxios";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { user } from "../users/Users";
 
 
@@ -12,7 +12,6 @@ import { user } from "../users/Users";
 
 type LocationProps = {
     state: {
-        id: user['id']
         user: user
         from: Location;
     };
@@ -24,7 +23,7 @@ export const UserDetail = () => {
     //const user: UserProp
 
     const [ loading, data, error, request ] = useAxios<user[]>(
-     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state.user.id}`}
+     {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state}`}
     );
 
     return (

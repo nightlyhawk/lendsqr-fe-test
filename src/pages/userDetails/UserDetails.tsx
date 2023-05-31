@@ -30,8 +30,10 @@ export const UserDetail = () => {
         <div className="text-secondary">
             <div><Link to='/users'>Back to users</Link>
             <h1>User Details</h1>
+            <div className="btns">
             <Button variant='btn-outline-error text-error' type="button" >BLACKLIST USER</Button>
             <Button variant="btn-outline-active text-active" type="button" >ACTIVATE USER</Button>
+            </div>
             </div>
            
                 {error && <div>{error}</div>}
@@ -49,7 +51,7 @@ export const UserDetail = () => {
                         <h2>{data.profile.firstName}{data.profile.lastName}</h2>
                         <p>{data.accountNumber}</p>
                     </li>
-                    <li ><h3>User's Tier</h3></li>
+                    <li className="mid"><h3>User's Tier</h3></li>
                     <li className="right">
                     <h2>₦{data.accountBalance}</h2>
                     <p>{data.accountNumber}</p>

@@ -24,8 +24,8 @@ export const UserDetail = () => {
 
     const [ loading, data, error, request ] = useAxios<user[]>(
      {method: 'GET', url:`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${state}`}
-    );
-
+     );
+    console.log(data)
     return (
         <div className="text-secondary">
             <div><Link to='/users'>Back to Users</Link>
@@ -38,8 +38,6 @@ export const UserDetail = () => {
                 {loading && <div>loading...</div>}
 
                 {data && data.map((user) => (
-                
-               
                   <div>
                      <ul>
                     <li>

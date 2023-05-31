@@ -15,6 +15,10 @@
 {
     @include props;
     margin-bottom: 40px;
+    li
+    {
+        width: 22%;
+    }
 
     ul
     {
@@ -56,10 +60,19 @@
     .btm
     {
         border-bottom: 1px solid $secondary;
+        padding: 15px;
         ul
         {
             list-style: none;
             @include row;
+            li
+            {
+                width: 22%;
+            }
         }
     }
 }
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }

@@ -46,11 +46,14 @@ export const UserDetail = () => {
                         <img src={data.profile.avatar} alt="avatar" />
                     </li>
                     <li className="left">    
-                        <h2>{data.firstName}{data.lastName}</h2>
+                        <h2>{data.profile.firstName}{data.profile.lastName}</h2>
                         <p>{data.accountNumber}</p>
                     </li>
-                    <li className="right"><h3>User's Tier</h3></li>
-                    <li>₦{data.accountBalance}</li>
+                    <li ><h3>User's Tier</h3></li>
+                    <li className="right">
+                    <h2>₦{data.accountBalance}</h2>
+                    <p>{data.accountNumber}</p>
+                    </li>
                     </ul>
                 
                 <ul className="Top2">

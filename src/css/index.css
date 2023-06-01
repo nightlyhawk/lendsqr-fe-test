@@ -330,7 +330,7 @@ nav ul {
 }
 
 .highlight {
-  border-right: 5px solid #39CDCC;
+  border-right: 5px solid #b3eceb;
   background-color: #39CDCC;
 }
 
@@ -537,13 +537,13 @@ table tr td {
   border-radius: 999px;
 }
 .Top .Top1 .left {
-  border-right: 1px solid #213F7D;
+  border-right: 1px solid #6287d5;
 }
 .Top .Top1 .right {
-  border-left: 1px solid #213F7D;
+  border-left: 1px solid #6287d5;
 }
-.Top .Top2:first-child {
-  border-bottom: 1px solid #39CDCC;
+.Top .child {
+  border-bottom: 1px solid #b3eceb;
   color: #39CDCC;
   height: 27px;
 }
@@ -557,7 +557,7 @@ table tr td {
   padding: 15px;
 }
 .bottom .btm {
-  border-bottom: 1px solid #213F7D;
+  border-bottom: 1px solid #6287d5;
 }
 .bottom .btm ul {
   list-style: none;

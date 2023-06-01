@@ -59,7 +59,7 @@ export const UserDetail = () => {
                     </ul>
                 
                 <ul className="Top2">
-                    <li>General Details</li>
+                    <li className="child">General Details</li>
                     <li>Documents</li>
                     <li>Bank Details</li>
                     <li>Loans</li>

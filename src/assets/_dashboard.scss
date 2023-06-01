@@ -32,7 +32,7 @@
 }
 .highlight
 {
-  border-right: 5px solid $tertiary;
+  border-right: 5px solid lighten($tertiary, 30%);
   background-color: $tertiary;
 }
 .log

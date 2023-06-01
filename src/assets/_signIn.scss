@@ -4,6 +4,11 @@ $top_width: 35%;
     height: $hgt;
     margin: auto;
 }
+@font-face {
+    font-family: "AvenirNextLTPro-Bold";   /*Can be any text*/
+    src: local("AvenirNextLTPro-Bold"),
+      url("./font/AvenirNextLTPro-Bold.otf") format("opentype");
+  }
 
 
 .signin
@@ -11,6 +16,7 @@ $top_width: 35%;
     display: flex;
     flex-direction: row;
     height: 100vh;
+    font-family: "AvenirNextLTPro-Bold";
     
     img
     {

@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: "Dela Gothic One", cursive;
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 12px;
@@ -389,10 +388,15 @@ nav ul {
   display: none;
 }
 
+@font-face {
+  font-family: "AvenirNextLTPro-Bold"; /*Can be any text*/
+  src: local("AvenirNextLTPro-Bold"), url("./font/AvenirNextLTPro-Bold.otf") format("opentype");
+}
 .signin {
   display: flex;
   flex-direction: row;
   height: 100vh;
+  font-family: "AvenirNextLTPro-Bold";
 }
 .signin img {
   position: absolute;

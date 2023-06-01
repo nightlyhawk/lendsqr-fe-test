@@ -330,12 +330,12 @@ nav ul {
 }
 
 .highlight {
-  border-right: 5px solid #b3eceb;
-  background-color: #39CDCC;
+  border-left: 5px solid #39CDCC;
+  background-color: #b3eceb;
 }
 
 .log {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .overlay-on {
@@ -537,13 +537,13 @@ table tr td {
   border-radius: 999px;
 }
 .Top .Top1 .left {
-  border-right: 1px solid #6287d5;
+  border-right: 1px solid #545F7D;
 }
 .Top .Top1 .right {
-  border-left: 1px solid #6287d5;
+  border-left: 1px solid #545F7D;
 }
 .Top .child {
-  border-bottom: 1px solid #b3eceb;
+  border-bottom: 5px solid #b3eceb;
   color: #39CDCC;
   height: 27px;
 }
@@ -557,7 +557,7 @@ table tr td {
   padding: 15px;
 }
 .bottom .btm {
-  border-bottom: 1px solid #6287d5;
+  border-bottom: 1px solid #213F7D;
 }
 .bottom .btm ul {
   list-style: none;

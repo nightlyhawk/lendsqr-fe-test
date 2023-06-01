@@ -32,10 +32,10 @@
 }
 .highlight
 {
-  border-right: 5px solid lighten($tertiary, 30%);
-  background-color: $tertiary;
+  border-left: 5px solid $tertiary;
+  background-color: lighten($tertiary, 30%);
 }
 .log
 {
-  margin-top: 30px;
+  margin-top: 40px;
 }

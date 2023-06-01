@@ -41,16 +41,16 @@
         margin-bottom: 40px;
         .left
         {
-            border-right: 1px solid lighten($secondary, 30%);
+            border-right: 1px solid $border_color
         }
         .right
         {
-            border-left: 1px solid lighten($secondary, 30%);
+            border-left: 1px solid $border_color
         }
     }
     .child
     {
-        border-bottom: 1px solid lighten($tertiary, 30%);
+        border-bottom: 5px solid lighten($tertiary, 30%);
         color: $tertiary;
         height: 27px;
     }
@@ -62,7 +62,7 @@
     padding: 15px;
     .btm
     {
-        border-bottom: 1px solid lighten($secondary, 30%);
+        border-bottom: 1px solid $secondary;     
         ul
         {
             list-style: none;
